@@ -1,0 +1,49 @@
+{
+  "config": {
+    "title": "Drew I Kit",
+    "description": "My personal UIKit built as abstract React components and configuration.",
+    "menu": [],
+    "ordering": "descending",
+    "version": "0.0.1",
+    "repository": "https://github.com/drewbarontini/drew-i-kit",
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {}
+  },
+  "entries": {
+    "components/Box/Box.mdx": {
+      "name": "Box",
+      "route": "/components/box",
+      "id": "5dc067be31ceffa88f480a63ebcb4763",
+      "filepath": "components/Box/Box.mdx",
+      "link": "https://github.com/drewbarontini/drew-i-kit/edit/master/components/Box/Box.mdx",
+      "slug": "components-box-box",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "box",
+          "value": "Box"
+        }
+      ]
+    },
+    "components/Flex/Flex.mdx": {
+      "name": "Flex",
+      "route": "/components/flex",
+      "id": "a57058fe17ed1aa456d1b0b80fa30c72",
+      "filepath": "components/Flex/Flex.mdx",
+      "link": "https://github.com/drewbarontini/drew-i-kit/edit/master/components/Flex/Flex.mdx",
+      "slug": "components-flex-flex",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "flex",
+          "value": "Flex"
+        }
+      ]
+    }
+  }
+}

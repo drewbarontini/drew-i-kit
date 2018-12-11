@@ -1,0 +1,29 @@
+{
+  "name": "drew-i-kit",
+  "version": "0.0.1",
+  "description": "My personal UIKit built as abstract React components and configuration.",
+  "main": "index.js",
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewbarontini/drew-i-kit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewbarontini/drew-i-kit/issues"
+  },
+  "homepage": "https://github.com/drewbarontini/drew-i-kit#readme",
+  "devDependencies": {
+    "docz": "^0.12.15"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "styled-components": "^4.1.2"
+  }
+}
