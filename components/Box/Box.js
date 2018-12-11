@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { setProp } from '../../lib/styleUtils';
@@ -11,5 +12,11 @@ const Box = styled.div`
   ${setProp({ prop: 'height' })};
   ${setProp({ prop: 'width' })};
 `;
+
+Box.propTypes = {
+  backgroundColor: PropTypes.string,
+  height: PropTypes.string,
+  width: PropTypes.string,
+};
 
 export default Box;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { setProp } from '../../lib/styleUtils';
@@ -13,5 +14,10 @@ const FlexItem = styled.div`
     themeKey: 'spacing',
   })};
 `;
+
+FlexItem.propTypes = {
+  marginRight: PropTypes.string,
+  size: PropTypes.string,
+};
 
 export default FlexItem;
