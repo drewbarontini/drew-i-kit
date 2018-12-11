@@ -1,6 +1,6 @@
 {
   "config": {
-    "title": "Drew I Kit",
+    "title": "drew-i-kit",
     "description": "My personal UIKit built as abstract React components and configuration.",
     "menu": [],
     "ordering": "descending",
