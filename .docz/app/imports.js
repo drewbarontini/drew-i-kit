@@ -5,4 +5,6 @@ export const imports = {
     import(/* webpackPrefetch: true, webpackChunkName: "components-flex-flex" */ 'components/Flex/Flex.mdx'),
   'components/Space/Space.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "components-space-space" */ 'components/Space/Space.mdx'),
+  'components/Icon/Icon.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "components-icon-icon" */ 'components/Icon/Icon.mdx'),
 }
