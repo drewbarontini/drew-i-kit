@@ -9,13 +9,23 @@ const Box = styled.div`
     cssProp: 'background-color',
     themeKey: 'colors',
   })};
+  ${setProp({ prop: 'bottom', themeKey: 'spacing' })};
   ${setProp({ prop: 'height' })};
+  ${setProp({ prop: 'left', themeKey: 'spacing' })};
+  ${setProp({ prop: 'position' })};
+  ${setProp({ prop: 'right', themeKey: 'spacing' })};
+  ${setProp({ prop: 'top', themeKey: 'spacing' })};
   ${setProp({ prop: 'width' })};
 `;
 
 Box.propTypes = {
   backgroundColor: PropTypes.string,
+  bottom: PropTypes.string,
   height: PropTypes.string,
+  left: PropTypes.string,
+  position: PropTypes.string,
+  right: PropTypes.string,
+  top: PropTypes.string,
   width: PropTypes.string,
 };
 
