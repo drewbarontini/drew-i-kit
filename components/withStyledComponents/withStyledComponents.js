@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../../config/theme';
 import GlobalStyles from '../GlobalStyles';
 
-export default function withThemeProvider(Component) {
+export default function withStyledComponents(Component) {
   return function(props) {
     return (
       <ThemeProvider theme={theme}>
