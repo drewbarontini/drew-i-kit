@@ -48,6 +48,9 @@ const theme = {
     l: '32px',
     xl: '60px',
   },
+  transition: {
+    base: '0.3s ease-in-out',
+  },
 };
 
 export default theme;
