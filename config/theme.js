@@ -1,5 +1,8 @@
 const theme = {
   borders: {
+    sizes: {
+      base: '1px',
+    },
     radius: {
       base: '3px',
     },
