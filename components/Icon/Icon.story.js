@@ -5,27 +5,28 @@ import icons from '../../config/icons';
 
 import Flex from '../Flex';
 import Icon from './';
+import { Object } from 'es6-shim';
 
 storiesOf('Icon', module)
   .add('default', () => (
     <Flex>
-      {icons.map((icon, index) => (
-        <Icon name={icon.name} key={index} marginRight="s" />
+      {Object.keys(icons).map((icon, index) => (
+        <Icon name={icon} key={index} marginRight="s" />
       ))}
     </Flex>
   ))
   .add('size', () => (
     <Flex>
-      {icons.map((icon, index) => (
-        <Icon name={icon.name} key={index} marginRight="s" size="40" />
+      {Object.keys(icons).map((icon, index) => (
+        <Icon name={icon} key={index} marginRight="s" size="40" />
       ))}
     </Flex>
   ))
   .add('color', () => (
     <Flex>
-      {icons.map((icon, index) => (
+      {Object.keys(icons).map((icon, index) => (
         <Icon
-          name={icon.name}
+          name={icon}
           key={index}
           marginRight="s"
           size="40"
