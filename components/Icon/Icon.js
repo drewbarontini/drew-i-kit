@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import icons from '../../config/icons';
 
-import Container from './styled/Container';
+import StyledIcon from './styled/Icon';
 
 const Icon = ({
   name,
@@ -17,7 +17,7 @@ const Icon = ({
   const newHeight = size || height;
 
   return (
-    <Container
+    <StyledIcon
       color={color}
       width={newWidth}
       height={newHeight}
@@ -29,7 +29,7 @@ const Icon = ({
       ) : (
         <path d={icons[name]} />
       )}
-    </Container>
+    </StyledIcon>
   );
 };
 

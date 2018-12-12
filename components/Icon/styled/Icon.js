@@ -31,4 +31,6 @@ Icon.propTypes = {
   marginRight: PropTypes.string,
 };
 
+Icon.displayName = 'StyledIcon';
+
 export default Icon;

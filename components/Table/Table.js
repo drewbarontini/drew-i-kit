@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Container from './styled/Container';
+import StyledTable from './styled/Table';
 
 const Table = ({ headings, data } = {}) => {
   return (
-    <Container>
+    <StyledTable>
       <thead>
         <tr>
           {headings.map((heading, index) => (
@@ -22,7 +22,7 @@ const Table = ({ headings, data } = {}) => {
           </tr>
         ))}
       </tbody>
-    </Container>
+    </StyledTable>
   );
 };
 

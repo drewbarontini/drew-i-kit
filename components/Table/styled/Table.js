@@ -26,4 +26,6 @@ const Table = styled.table`
   }
 `;
 
+Table.displayName = 'Table';
+
 export default Table;
