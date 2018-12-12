@@ -4,7 +4,9 @@
   "description": "My personal UIKit built as abstract React components and configuration.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -17,9 +19,17 @@
     "url": "https://github.com/drewbarontini/drew-i-kit/issues"
   },
   "homepage": "https://github.com/drewbarontini/drew-i-kit#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@storybook/addon-actions": "^4.0.12",
+    "@storybook/addon-links": "^4.0.12",
+    "@storybook/addons": "^4.0.12",
+    "@storybook/react": "^4.0.12",
+    "babel-loader": "^8.0.4"
+  },
   "dependencies": {
     "lodash": "^4.17.11",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "styled-components": "^4.1.2"
