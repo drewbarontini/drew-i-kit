@@ -45,23 +45,6 @@
         }
       ]
     },
-    "components/Space/Space.mdx": {
-      "name": "Space",
-      "route": "/components/space",
-      "id": "30036ac11d38db78a963a12ec7a5cfc1",
-      "filepath": "components/Space/Space.mdx",
-      "link": "https://github.com/drewbarontini/drew-i-kit/edit/master/components/Space/Space.mdx",
-      "slug": "components-space-space",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "space",
-          "value": "Space"
-        }
-      ]
-    },
     "components/Icon/Icon.mdx": {
       "name": "Icon",
       "route": "/components/icon",
@@ -76,6 +59,23 @@
           "depth": 1,
           "slug": "icon",
           "value": "Icon"
+        }
+      ]
+    },
+    "components/Space/Space.mdx": {
+      "name": "Space",
+      "route": "/components/space",
+      "id": "30036ac11d38db78a963a12ec7a5cfc1",
+      "filepath": "components/Space/Space.mdx",
+      "link": "https://github.com/drewbarontini/drew-i-kit/edit/master/components/Space/Space.mdx",
+      "slug": "components-space-space",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "space",
+          "value": "Space"
         }
       ]
     }
