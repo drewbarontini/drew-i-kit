@@ -1,0 +1,71 @@
+import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
+
+import Placeholder from './styled/Placeholder';
+import StyledImage from './styled/Image';
+
+class Image extends Component {
+  state: State = {
+    isLoaded: false,
+    hasError: false,
+  };
+
+  handleLoad = () => {
+    const { onLoaded } = this.props;
+    const { width, height } = this.node;
+
+    this.setState(
+      {
+        isLoaded: true,
+      },
+      onLoaded && onLoaded({ width, height })
+    );
+  };
+
+  handleError = () => {
+    this.setState({
+      hasError: true,
+    });
+  };
+
+  render() {
+    const { isLoaded, hasError } = this.state;
+    const { src, alt, height, width, ...props } = this.props;
+    const placeholder = <Placeholder width={width} height={height} />;
+
+    if (hasError) {
+      return placeholder;
+    }
+
+    return (
+      <Fragment>
+        {isLoaded ? null : placeholder}
+        <StyledImage
+          ref={node => {
+            this.node = node;
+          }}
+          src={src}
+          alt={alt}
+          height={height}
+          width={width}
+          onLoad={this.handleLoad}
+          onError={this.handleError}
+          isLoaded={isLoaded}
+          {...props}
+        />
+      </Fragment>
+    );
+  }
+}
+
+Image.propTypes = {
+  alt: PropTypes.string,
+  height: PropTypes.string,
+  onLoaded: PropTypes.Function,
+  src: PropTypes.string,
+  width: PropTypes.string,
+};
+
+Image.displayName = 'Image';
+
+export default Image;
