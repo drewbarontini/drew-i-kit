@@ -1,22 +1,30 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import UL from './';
+import List from './';
 
-storiesOf('UL', module)
+storiesOf('List', module)
   .add('default', () => (
-    <UL>
+    <List>
       <li>One</li>
       <li>Two</li>
       <li>Three</li>
       <li>Four</li>
-    </UL>
+    </List>
   ))
   .add('styled', () => (
-    <UL styled>
+    <List type="disc">
       <li>One</li>
       <li>Two</li>
       <li>Three</li>
       <li>Four</li>
-    </UL>
+    </List>
+  ))
+  .add('numbered', () => (
+    <List type="decimal">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+    </List>
   ));

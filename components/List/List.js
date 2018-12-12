@@ -2,30 +2,35 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { theme } from '../../lib/styleUtils';
+import { theme, setProp } from '../../lib/styleUtils';
 
-const UL = styled.ul`
-  list-style-type: ${ifProp('styled', 'disc', 'none')};
+const List = styled.ul`
   margin: 0;
   padding: 0;
 
+  ${setProp({
+    prop: 'type',
+    cssProp: 'list-style-type',
+    fallback: 'none',
+  })}
+
   ${ifProp(
-    'styled',
+    'type',
     css`
       margin-left: ${theme('spacing.base')};
     `
-  )};
+  )}
 
   > *:not(:last-child) {
     margin-bottom: ${props => (props.flush ? '0' : theme('spacing.s'))};
   }
 `;
 
-UL.propTypes = {
+List.propTypes = {
   flush: PropTypes.string,
-  styled: PropTypes.string,
+  type: PropTypes.string,
 };
 
-UL.displayName = 'UL';
+List.displayName = 'List';
 
-export default UL;
+export default List;
