@@ -32,6 +32,7 @@
     "normalize.css": "^8.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
-    "styled-components": "^4.1.2"
+    "styled-components": "^4.1.2",
+    "styled-tools": "^1.6.0"
   }
 }
