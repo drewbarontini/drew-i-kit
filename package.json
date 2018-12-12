@@ -4,8 +4,6 @@
   "description": "My personal UIKit built as abstract React components and configuration.",
   "main": "index.js",
   "scripts": {
-    "dev": "docz dev",
-    "build": "docz build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,9 +17,7 @@
     "url": "https://github.com/drewbarontini/drew-i-kit/issues"
   },
   "homepage": "https://github.com/drewbarontini/drew-i-kit#readme",
-  "devDependencies": {
-    "docz": "^0.12.15"
-  },
+  "devDependencies": {},
   "dependencies": {
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
