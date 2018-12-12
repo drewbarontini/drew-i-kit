@@ -11,6 +11,23 @@
     "themeConfig": {}
   },
   "entries": {
+    "index.mdx": {
+      "name": "Home",
+      "route": "/",
+      "id": "91149a4106ab27ef746308b41227aca8",
+      "filepath": "index.mdx",
+      "link": "https://github.com/drewbarontini/drew-i-kit/edit/master/index.mdx",
+      "slug": "index",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "hello",
+          "value": "Hello!"
+        }
+      ]
+    },
     "components/Box/Box.mdx": {
       "name": "Box",
       "route": "/components/box",
