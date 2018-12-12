@@ -33,4 +33,6 @@ Space.propTypes = {
   top: PropTypes.string,
 };
 
+Space.displayName = 'Space';
+
 export default Space;

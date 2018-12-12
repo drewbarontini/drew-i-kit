@@ -4,4 +4,6 @@ const Flex = styled.div`
   display: flex;
 `;
 
+Flex.displayName = 'Flex';
+
 export default Flex;

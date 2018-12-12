@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Container from './styled/Container';
 
-export default function Table({ headings, data } = {}) {
+const Table = ({ headings, data } = {}) => {
   return (
     <Container>
       <thead>
@@ -24,7 +24,7 @@ export default function Table({ headings, data } = {}) {
       </tbody>
     </Container>
   );
-}
+};
 
 Table.propTypes = {
   headings: PropTypes.arrayOf(
@@ -35,3 +35,7 @@ Table.propTypes = {
   ).isRequired,
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
+
+Table.displayName = 'Table';
+
+export default Table;

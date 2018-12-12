@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
@@ -19,5 +20,12 @@ const UL = styled.ul`
     margin-bottom: ${props => (props.flush ? '0' : theme('spacing.s'))};
   }
 `;
+
+UL.propTypes = {
+  flush: PropTypes.string,
+  styled: PropTypes.string,
+};
+
+UL.displayName = 'UL';
 
 export default UL;

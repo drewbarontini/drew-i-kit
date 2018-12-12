@@ -31,4 +31,6 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
+GlobalStyles.displayName = 'GlobalStyles';
+
 export default GlobalStyles;

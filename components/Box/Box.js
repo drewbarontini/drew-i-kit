@@ -19,4 +19,6 @@ Box.propTypes = {
   width: PropTypes.string,
 };
 
+Box.displayName = 'Box';
+
 export default Box;

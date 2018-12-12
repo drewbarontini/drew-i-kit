@@ -14,14 +14,14 @@ const getPath = (name: string) =>
 
 const isArray = (name: string) => Array.isArray(getPath(name));
 
-export default function Icon({
+const Icon = ({
   name,
   color,
   height = '20',
   size = '20',
   width = '20',
   ...props
-}: Props = {}) {
+}: Props = {}) => {
   const newWidth = size || width;
   const newHeight = size || height;
 
@@ -40,7 +40,7 @@ export default function Icon({
       )}
     </Container>
   );
-}
+};
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
@@ -49,3 +49,7 @@ Icon.propTypes = {
   size: PropTypes.string,
   width: PropTypes.string,
 };
+
+Icon.displayName = 'Icon';
+
+export default Icon;

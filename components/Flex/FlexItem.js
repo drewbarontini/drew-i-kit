@@ -20,4 +20,6 @@ FlexItem.propTypes = {
   size: PropTypes.string,
 };
 
+FlexItem.displayName = 'FlexItem';
+
 export default FlexItem;
