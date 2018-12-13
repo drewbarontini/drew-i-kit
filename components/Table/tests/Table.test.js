@@ -16,8 +16,12 @@ describe('<Table />', () => {
       />
     );
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('table');
+    expect(container.firstChild.querySelectorAll('thead').length).toBe(1);
+    expect(container.firstChild.querySelectorAll('tbody').length).toBe(1);
+    expect(container.firstChild.querySelectorAll('th').length).toBe(2);
+    expect(container.firstChild.querySelectorAll('td').length).toBe(2);
     expect(container.firstChild).toHaveStyleRule('border-collapse', 'collapse');
     expect(container.firstChild).toHaveStyleRule('width', '100%');
-    expect(container.firstChild.tagName.toLowerCase()).toEqual('table');
   });
 });
