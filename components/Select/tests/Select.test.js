@@ -25,5 +25,8 @@ describe('<Select />', () => {
     expect(container.firstChild).toHaveAttribute('name');
     expect(container.firstChild.name).toEqual('select');
     expect(container.firstChild.childNodes.length).toBe(3);
+    expect(container.firstChild.childNodes[0]).toHaveTextContent(/select/i);
+    expect(container.firstChild.childNodes[1]).toHaveTextContent(/foo/i);
+    expect(container.firstChild.childNodes[2]).toHaveTextContent(/bar/i);
   });
 });
