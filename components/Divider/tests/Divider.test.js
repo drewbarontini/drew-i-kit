@@ -10,6 +10,7 @@ describe('<Divider />', () => {
   it('should render properly', () => {
     const { container } = render(<Divider theme={theme} />);
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('div');
     expect(container.firstChild).toHaveStyleRule(
       'background-color',
       theme.colors.subdued
