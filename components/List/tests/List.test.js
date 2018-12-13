@@ -16,6 +16,10 @@ describe('<List />', () => {
       </List>
     );
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('ul');
     expect(container.firstChild.childNodes.length).toBe(3);
+    expect(container.firstChild.childNodes[0]).toHaveTextContent(/one/i);
+    expect(container.firstChild.childNodes[1]).toHaveTextContent(/two/i);
+    expect(container.firstChild.childNodes[2]).toHaveTextContent(/three/i);
   });
 });
