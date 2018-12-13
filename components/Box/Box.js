@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { ifProp } from 'styled-tools';
 
-import { setProp } from '../../lib/styleUtils';
+import { setProp, palette, theme } from '../../lib/styleUtils';
 
 const Box = styled.div`
   ${setProp({
@@ -9,6 +10,16 @@ const Box = styled.div`
     cssProp: 'background-color',
     themeKey: 'colors',
   })};
+
+  ${props =>
+    ifProp(
+      'border',
+      css`
+        border: ${theme('borders.sizes.base')(props)} solid
+          ${palette(`${props.border}`)(props)};
+      `
+    )}
+
   ${setProp({ prop: 'bottom', themeKey: 'spacing' })};
   ${setProp({ prop: 'height' })};
   ${setProp({ prop: 'left', themeKey: 'spacing' })};
