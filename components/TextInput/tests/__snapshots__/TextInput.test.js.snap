@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInput /> should render properly 1`] = `
+.c0 {
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.c0:focus {
+  border-color: #3576a7;
+  outline: none;
+}
+
+<input
+  class="c0"
+  id="input"
+  name="input"
+  type="text"
+/>
+`;
