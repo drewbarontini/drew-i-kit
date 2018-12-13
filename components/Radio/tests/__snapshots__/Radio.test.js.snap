@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<A /> should render properly 1`] = `
+<input
+  id="radio"
+  name="radio"
+  theme="[object Object]"
+  type="radio"
+/>
+`;
