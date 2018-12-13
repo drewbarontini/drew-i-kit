@@ -14,7 +14,7 @@ describe('<Box />', () => {
       </Box>
     );
     expect(container.firstChild).toMatchSnapshot();
-    expect(container.firstChild.tagName).toEqual('DIV');
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('div');
     expect(container.firstChild).toHaveTextContent('My Box');
     expect(container.firstChild).toHaveStyleRule(
       'background-color',

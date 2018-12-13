@@ -19,7 +19,7 @@ describe('<Select />', () => {
       />
     );
     expect(container.firstChild).toMatchSnapshot();
-    expect(container.firstChild.tagName).toEqual('SELECT');
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('select');
     expect(container.firstChild).toHaveAttribute('id');
     expect(container.firstChild.id).toEqual('select');
     expect(container.firstChild).toHaveAttribute('name');

@@ -10,7 +10,7 @@ describe('<TextInput />', () => {
   it('should render properly', () => {
     const { container } = render(<TextInput name="input" theme={theme} />);
     expect(container.firstChild).toMatchSnapshot();
-    expect(container.firstChild.tagName).toEqual('INPUT');
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('input');
     expect(container.firstChild).toHaveAttribute('id');
     expect(container.firstChild.id).toEqual('input');
     expect(container.firstChild).toHaveAttribute('name');

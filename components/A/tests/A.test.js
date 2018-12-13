@@ -14,7 +14,7 @@ describe('<A />', () => {
       </A>
     );
     expect(container.firstChild).toMatchSnapshot();
-    expect(container.firstChild.tagName).toEqual('A');
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('a');
     expect(container.firstChild).toHaveTextContent('My Link');
     expect(container.firstChild).toHaveAttribute('href');
     expect(container.firstChild).toHaveStyleRule('color', theme.colors.primary);

@@ -18,6 +18,6 @@ describe('<Table />', () => {
     expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toHaveStyleRule('border-collapse', 'collapse');
     expect(container.firstChild).toHaveStyleRule('width', '100%');
-    expect(container.firstChild.tagName).toEqual('TABLE');
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('table');
   });
 });
