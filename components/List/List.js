@@ -12,14 +12,14 @@ const List = styled.ul`
     prop: 'type',
     cssProp: 'list-style-type',
     fallback: 'none',
-  })}
+  })};
 
   ${ifProp(
     'type',
     css`
       margin-left: ${theme('spacing.base')};
     `
-  )}
+  )};
 
   > *:not(:last-child) {
     margin-bottom: ${props => (props.flush ? '0' : theme('spacing.s'))};
