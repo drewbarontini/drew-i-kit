@@ -15,6 +15,8 @@ describe('<Flex />', () => {
       </Flex>
     );
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('div');
+    expect(container.firstChild).toHaveTextContent(/helloflex/i);
     expect(container.firstChild).toHaveStyleRule('display', 'flex');
   });
 });
