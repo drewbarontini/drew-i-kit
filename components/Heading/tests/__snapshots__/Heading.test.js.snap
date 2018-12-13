@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> should render properly 1`] = `
+.c0 {
+  font-size: 26px;
+}
+
+<h1
+  class="c0"
+>
+  My Heading
+</h1>
+`;
