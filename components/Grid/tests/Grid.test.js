@@ -15,6 +15,8 @@ describe('<A />', () => {
       </Grid>
     );
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('div');
+    expect(container.firstChild).toHaveTextContent(/hellogrid/i);
     expect(container.firstChild).toHaveStyleRule('display', 'grid');
   });
 });
