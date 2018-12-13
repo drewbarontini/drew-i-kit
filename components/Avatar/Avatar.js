@@ -12,7 +12,7 @@ const Avatar = styled(Image)`
   ${ifProp(
     'raised',
     css`
-      border: 5px solid ${palette('bg')};
+      border: 5px solid ${palette('white')};
       box-shadow: ${theme('shadows.base')};
     `
   )}
