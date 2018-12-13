@@ -1,7 +1,7 @@
 {
   "name": "drew-i-kit",
   "version": "0.0.0",
-  "description": "My personal UIKit built as abstract React components and configuration.",
+  "description": "A collection of highly compose-able React components.",
   "main": "index.js",
   "scripts": {
     "test": "jest --watch",
