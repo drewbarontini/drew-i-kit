@@ -1,34 +1,19 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
-import { theme, palette, setProp } from '../../lib/utils';
+import StyledTextInput from './styled/TextInput';
 
-const TextInput = styled.input`
-  border: ${theme('borders.sizes.base')} solid ${palette('subdued')};
-  border-radius: ${theme('borders.radius.base')};
-
-  ${setProp({
-    prop: 'fontSize',
-    themeKey: 'fonts.sizes',
-    fallback: props => theme('fonts.sizes.base')(props),
-  })};
-  ${setProp({
-    prop: 'padding',
-    themeKey: 'spacing',
-    fallback: props => theme('spacing.s')(props),
-  })};
-  ${setProp({ prop: 'width', fallback: '100%' })};
-
-  &:focus {
-    border-color: ${palette('primary')};
-    outline: none;
-  }
-`;
+const TextInput = ({ type, name, ...rest }) => (
+  <StyledTextInput type={type} name={name} id={name} {...rest} />
+);
 
 TextInput.propTypes = {
-  fontSize: PropTypes.string,
-  padding: PropTypes.string,
-  width: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+};
+
+TextInput.defaultProps = {
+  type: 'text',
 };
 
 TextInput.displayName = 'TextInput';
