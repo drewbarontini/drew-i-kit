@@ -12,7 +12,7 @@ const Icon = ({
   size = '20',
   width = '20',
   ...props
-}: Props = {}) => {
+}) => {
   const newWidth = size || width;
   const newHeight = size || height;
 
