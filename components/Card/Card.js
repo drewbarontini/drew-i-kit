@@ -6,7 +6,7 @@ import Box from '../Box';
 import { setProp, theme, palette } from '../../lib/utils';
 
 const Card = styled(Box)`
-  background-color: ${palette('bg')};
+  background-color: ${palette('white')};
   border-radius: ${theme('borders.radius.base')};
   box-shadow: ${theme('shadows.base')};
 
