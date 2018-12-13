@@ -14,6 +14,8 @@ describe('<Space />', () => {
       </Space>
     );
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('div');
+    expect(container.firstChild).toHaveTextContent('Hello, Space!');
     expect(container.firstChild).toHaveStyleRule(
       'margin-bottom',
       theme.spacing.base
