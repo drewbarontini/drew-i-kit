@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.4.0 - 2018-12-13
+
+### Added
+- `Cell` component
+
 ## v0.3.0 - 2018-12-13
 
 ### Added
