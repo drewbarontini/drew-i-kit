@@ -3,11 +3,11 @@ import React, { Fragment } from 'react';
 import { ThemeProvider } from 'styled-components';
 import 'normalize.css';
 
-import { theme } from '../config';
+import { theme } from '../src/config';
 
-import GlobalStyles from '../components/GlobalStyles';
+import GlobalStyles from '../src/components/GlobalStyles';
 
-const req = require.context('../components/', true, /.story.js$/);
+const req = require.context('../src/components/', true, /.story.js$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
