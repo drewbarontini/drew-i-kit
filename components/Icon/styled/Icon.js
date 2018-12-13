@@ -7,20 +7,21 @@ const Icon = styled.svg`
   align-self: center;
   display: inline-flex;
   vertical-align: middle;
+
   ${setProp({
     prop: 'color',
     cssProp: 'fill',
     themeKey: 'colors',
     fallback: 'currentColor',
-  })}
+  })};
   ${setProp({
     prop: 'marginLeft',
     themeKey: 'spacing',
-  })}
+  })};
   ${setProp({
     prop: 'marginRight',
     themeKey: 'spacing',
-  })}
+  })};
 `;
 
 Icon.propTypes = {
