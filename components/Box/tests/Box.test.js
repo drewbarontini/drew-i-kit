@@ -9,9 +9,13 @@ import Box from '../';
 describe('<Box />', () => {
   it('should render properly', () => {
     const { container } = render(
-      <Box backgroundColor="primary" padding="base" theme={theme} />
+      <Box backgroundColor="primary" padding="base" theme={theme}>
+        My Box
+      </Box>
     );
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild.tagName).toEqual('DIV');
+    expect(container.firstChild).toHaveTextContent('My Box');
     expect(container.firstChild).toHaveStyleRule(
       'background-color',
       theme.colors.primary

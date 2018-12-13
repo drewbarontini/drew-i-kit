@@ -8,5 +8,7 @@ exports[`<Box /> should render properly 1`] = `
 
 <div
   class="c0"
-/>
+>
+  My Box
+</div>
 `;
