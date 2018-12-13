@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> should render properly 1`] = `
+.c0 {
+  width: 200px;
+}
+
+<select
+  class="c0"
+  id="select"
+  name="select"
+>
+  <option
+    value=""
+  >
+    Select...
+  </option>
+  <option
+    value="foo"
+  >
+    Foo
+  </option>
+  <option
+    value="bar"
+  >
+    Bar
+  </option>
+</select>
+`;
