@@ -9,7 +9,7 @@ const Button = styled.button`
   border: 0;
   border: 2px solid ${ifProp('primary', 'transparent', palette('fg'))};
   border-radius: ${theme('borders.radius.base')}
-  color: ${ifProp('primary', palette('bg'), palette('fg'))};
+  color: ${ifProp('primary', palette('white'), palette('fg'))};
   cursor: pointer;
   display: inline-block;
   font-size: ${theme('fonts.sizes.xs')};
@@ -23,7 +23,7 @@ const Button = styled.button`
   ${hover(css`
     background-color: ${ifProp('primary', palette('fg'), 'transparent')};
     border-color: ${ifProp('primary', 'transparent', palette('primary'))};
-    color: ${ifProp('primary', palette('bg'), palette('primary'))};
+    color: ${ifProp('primary', palette('white'), palette('primary'))};
   `)}
 `;
 
