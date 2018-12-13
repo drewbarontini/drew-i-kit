@@ -21,6 +21,7 @@ export { default as Card } from './components/Card';
 export { default as Checkbox } from './components/Checkbox';
 export { default as Divider } from './components/Divider';
 export { default as Flex, default as FlexItem } from './components/Flex';
+export { default as GlobalStyles } from './components/GlobalStyles';
 export { default as Grid, default as GridItem } from './components/Grid';
 export { default as Heading } from './components/Heading';
 export { default as Icon } from './components/Icon';
