@@ -1,6 +1,5 @@
 // Config
-export { icons } from 'config/icons';
-export { theme } from 'config';
+export { theme as defaultTheme } from './config';
 
 // Utilities
 export {
@@ -10,26 +9,26 @@ export {
   styleUnitToInt,
   palette,
   setProp,
-  theme
-} from 'lib/utils';
+  theme,
+} from './lib/utils';
 
 // Components
-export { A } from 'components/A';
-export { Avatar } from 'components/Avatar';
-export { Box } from 'components/Box';
-export { Button } from 'components/Button';
-export { Card } from 'components/Card';
-export { Checkbox } from 'components/Checkbox';
-export { Divider } from 'components/Divider';
-export { Flex, FlexItem } from 'components/Flex';
-export { Grid, GridItem } from 'components/Grid';
-export { Heading } from 'components/Heading';
-export { Icon } from 'components/Icon';
-export { Image } from 'components/Image';
-export { List } from 'components/List';
-export { Radio } from 'components/Radio';
-export { Select } from 'components/Select';
-export { Space } from 'components/Space';
-export { Table } from 'components/Table';
-export { Text } from 'components/Text';
-export { TextInput } from 'components/TextInput';
+export { default as A } from './components/A';
+export { default as Avatar } from './components/Avatar';
+export { default as Box } from './components/Box';
+export { default as Button } from './components/Button';
+export { default as Card } from './components/Card';
+export { default as Checkbox } from './components/Checkbox';
+export { default as Divider } from './components/Divider';
+export { default as Flex, default as FlexItem } from './components/Flex';
+export { default as Grid, default as GridItem } from './components/Grid';
+export { default as Heading } from './components/Heading';
+export { default as Icon } from './components/Icon';
+export { default as Image } from './components/Image';
+export { default as List } from './components/List';
+export { default as Radio } from './components/Radio';
+export { default as Select } from './components/Select';
+export { default as Space } from './components/Space';
+export { default as Table } from './components/Table';
+export { default as Text } from './components/Text';
+export { default as TextInput } from './components/TextInput';
