@@ -10,6 +10,7 @@ describe('<A />', () => {
   it('should render properly', () => {
     const { container, debug } = render(<Radio name="radio" theme={theme} />);
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild.tagName.toLowerCase()).toEqual('input');
     expect(container.firstChild).toHaveAttribute('id');
     expect(container.firstChild.id).toEqual('radio');
     expect(container.firstChild).toHaveAttribute('name');
