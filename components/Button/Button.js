@@ -28,7 +28,7 @@ const Button = styled.button`
 `;
 
 Button.propTypes = {
-  primary: PropTypes.string,
+  primary: PropTypes.bool,
 };
 
 Button.displayName = 'Button';
