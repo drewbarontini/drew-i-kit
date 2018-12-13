@@ -12,8 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/drewbarontini/drew-i-kit.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "uikit"
+  ],
+  "author": "Drew Barontini",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/drewbarontini/drew-i-kit/issues"
