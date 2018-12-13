@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../lib/styleUtils';
+import { setProp } from '../../lib/utils';
 
 const GridItem = styled.div`
   ${setProp({
     prop: 'alignSelf',
-    cssProp: 'align-self',
   })};
   ${setProp({
     prop: 'area',
@@ -26,11 +25,9 @@ const GridItem = styled.div`
   })};
   ${setProp({
     prop: 'justifySelf',
-    cssProp: 'justify-self',
   })};
   ${setProp({
     prop: 'placeSelf',
-    cssProp: 'place-self',
   })};
   ${setProp({
     prop: 'row',

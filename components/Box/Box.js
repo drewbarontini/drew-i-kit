@@ -2,12 +2,11 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, palette, theme } from '../../lib/styleUtils';
+import { setProp, palette, theme } from '../../lib/utils';
 
 const Box = styled.div`
   ${setProp({
     prop: 'backgroundColor',
-    cssProp: 'background-color',
     themeKey: 'colors',
   })};
 

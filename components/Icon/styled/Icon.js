@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../../lib/styleUtils';
+import { setProp } from '../../../lib/utils';
 
 const Icon = styled.svg`
   align-self: center;
@@ -15,12 +15,10 @@ const Icon = styled.svg`
   })}
   ${setProp({
     prop: 'marginLeft',
-    cssProp: 'margin-left',
     themeKey: 'spacing',
   })}
   ${setProp({
     prop: 'marginRight',
-    cssProp: 'margin-right',
     themeKey: 'spacing',
   })}
 `;

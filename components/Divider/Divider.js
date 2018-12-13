@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../lib/styleUtils';
+import { setProp } from '../../lib/utils';
 
 const Divider = styled.div`
   ${props =>
@@ -18,12 +18,10 @@ const Divider = styled.div`
   })};
   ${setProp({
     prop: 'marginBottom',
-    cssProp: 'margin-bottom',
     themeKey: 'spacing',
   })}
   ${setProp({
     prop: 'marginTop',
-    cssProp: 'margin-top',
     themeKey: 'spacing',
   })}
   ${setProp({

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { palette, theme } from '../../lib/styleUtils';
+import { palette, theme } from '../../lib/utils';
 
 const GlobalStyles = createGlobalStyle`
   * {

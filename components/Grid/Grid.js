@@ -1,18 +1,16 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../lib/styleUtils';
+import { setProp } from '../../lib/utils';
 
 const Grid = styled.div`
   display: grid;
 
   ${setProp({
     prop: 'alignContent',
-    cssProp: 'align-content',
   })};
   ${setProp({
     prop: 'alignItems',
-    cssProp: 'align-items',
   })};
   ${setProp({
     prop: 'areas',
@@ -41,7 +39,6 @@ const Grid = styled.div`
   })};
   ${setProp({
     prop: 'justifyContent',
-    cssProp: 'justify-content',
   })};
   ${setProp({
     prop: 'gap',
@@ -53,11 +50,9 @@ const Grid = styled.div`
   })};
   ${setProp({
     prop: 'placeContent',
-    cssProp: 'place-content',
   })};
   ${setProp({
     prop: 'placeItems',
-    cssProp: 'place-items',
   })};
   ${setProp({
     prop: 'rows',

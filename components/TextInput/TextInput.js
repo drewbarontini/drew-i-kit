@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { theme, palette, setProp } from '../../lib/styleUtils';
+import { theme, palette, setProp } from '../../lib/utils';
 
 const TextInput = styled.input`
   border: ${theme('borders.sizes.base')} solid ${palette('subdued')};
@@ -9,7 +9,6 @@ const TextInput = styled.input`
 
   ${setProp({
     prop: 'fontSize',
-    cssProp: 'font-size',
     themeKey: 'fonts.sizes',
     fallback: props => theme('fonts.sizes.base')(props),
   })};

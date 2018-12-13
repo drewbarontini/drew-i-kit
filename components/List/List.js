@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { theme, setProp } from '../../lib/styleUtils';
+import { theme, setProp } from '../../lib/utils';
 
 const List = styled.ul`
   margin: 0;

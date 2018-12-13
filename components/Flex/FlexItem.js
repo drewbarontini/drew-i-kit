@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../lib/styleUtils';
+import { setProp } from '../../lib/utils';
 
 const FlexItem = styled.div`
   ${setProp({
@@ -14,7 +14,6 @@ const FlexItem = styled.div`
   })};
   ${setProp({
     prop: 'marginRight',
-    cssProp: 'margin-right',
     themeKey: 'spacing',
   })};
 `;

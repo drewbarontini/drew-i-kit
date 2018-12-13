@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { palette } from '../../../lib/styleUtils';
+import { palette } from '../../../lib/utils';
 
 const Placeholder = styled.div`
   background-color: ${palette('subdued')};

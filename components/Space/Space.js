@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../lib/styleUtils';
+import { setProp } from '../../lib/utils';
 
 const Space = styled.div`
   ${setProp({

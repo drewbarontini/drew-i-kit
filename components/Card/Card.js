@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp, theme, palette } from '../../lib/styleUtils';
+import { setProp, theme, palette } from '../../lib/utils';
 
 const Card = styled.div`
   background-color: ${palette('bg')};

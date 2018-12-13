@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, theme } from '../../lib/styleUtils';
+import { setProp, theme } from '../../lib/utils';
 
 const Text = styled.p`
   font-size: ${theme('fonts.sizes.base')};
@@ -20,25 +20,20 @@ const Text = styled.p`
   })};
   ${setProp({
     prop: 'fontSize',
-    cssProp: 'font-size',
     themeKey: 'fonts.sizes',
   })};
   ${setProp({
     prop: 'fontStyle',
-    cssProp: 'font-style',
   })};
   ${setProp({
     prop: 'fontWeight',
-    cssProp: 'font-weight',
     themeKey: 'fonts.weights',
   })};
   ${setProp({
     prop: 'letterSpacing',
-    cssProp: 'letter-spacing',
   })};
   ${setProp({
     prop: 'textAlign',
-    cssProp: 'text-align',
   })};
 `;
 

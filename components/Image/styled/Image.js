@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { theme } from '../../../lib/styleUtils';
+import { theme } from '../../../lib/utils';
 
 const Image = styled.img`
   opacity: ${ifProp('isLoaded', '1', '0')};

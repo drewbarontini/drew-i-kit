@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp } from '../../lib/styleUtils';
+import { setProp } from '../../lib/utils';
 
 const Flex = styled.div`
   display: flex;
@@ -15,12 +15,12 @@ const Flex = styled.div`
     `
   )};
 
-  ${setProp({ prop: 'alignItems', cssProp: 'align-items' })};
-  ${setProp({ prop: 'flex', cssProp: 'flex' })};
-  ${setProp({ prop: 'flexDirection', cssProp: 'flex-direction' })};
-  ${setProp({ prop: 'flexWrap', cssProp: 'flex-wrap' })};
+  ${setProp({ prop: 'alignItems' })};
+  ${setProp({ prop: 'flex' })};
+  ${setProp({ prop: 'flexDirection' })};
+  ${setProp({ prop: 'flexWrap' })};
   ${setProp({ prop: 'height' })};
-  ${setProp({ prop: 'justifyContent', cssProp: 'justify-content' })};
+  ${setProp({ prop: 'justifyContent' })};
 `;
 
 Flex.displayName = 'Flex';

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifNotProp } from 'styled-tools';
 
-import { hover, palette, setProp } from '../../lib/styleUtils';
+import { hover, palette, setProp } from '../../lib/utils';
 
 const A = styled.a`
   color: ${palette('primary')};
@@ -14,12 +14,10 @@ const A = styled.a`
   })};
   ${setProp({
     prop: 'fontSize',
-    cssProp: 'font-size',
     themeKey: 'fonts.sizes',
   })};
   ${setProp({
     prop: 'textDecoration',
-    cssProp: 'text-decoration',
   })};
 
   /*
