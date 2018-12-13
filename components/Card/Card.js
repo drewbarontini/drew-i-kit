@@ -7,15 +7,17 @@ const Card = styled.div`
   background-color: ${palette('bg')};
   border-radius: ${theme('borders.radius.base')};
   box-shadow: ${theme('shadows.base')};
-  padding: ${theme('spacing.base')};
 
+  ${setProp({ prop: 'display' })}
   ${setProp({
     prop: 'padding',
     themeKey: 'spacing',
+    fallback: props => theme('spacing.base')(props),
   })}
 `;
 
 Card.propTypes = {
+  display: PropTypes.string,
   padding: PropTypes.string,
 };
 
