@@ -5,7 +5,19 @@ import Placeholder from './styled/Placeholder';
 import StyledImage from './styled/Image';
 
 class Image extends Component {
-  state: State = {
+  static propTypes = {
+    alt: PropTypes.string,
+    height: PropTypes.string,
+    onLoaded: PropTypes.func,
+    src: PropTypes.string,
+    width: PropTypes.string,
+  };
+
+  static defaultProps = {
+    onLoaded: () => {},
+  };
+
+  state = {
     isLoaded: false,
     hasError: false,
   };
@@ -57,15 +69,5 @@ class Image extends Component {
     );
   }
 }
-
-Image.propTypes = {
-  alt: PropTypes.string,
-  height: PropTypes.string,
-  onLoaded: PropTypes.Function,
-  src: PropTypes.string,
-  width: PropTypes.string,
-};
-
-Image.displayName = 'Image';
 
 export default Image;

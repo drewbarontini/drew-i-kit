@@ -11,7 +11,7 @@ const Image = styled.img`
 `;
 
 Image.propTypes = {
-  isLoaded: PropTypes.boolean,
+  isLoaded: PropTypes.bool,
 };
 
 Image.displayName = 'StyledImage';
