@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import icons from '../../config/icons';
+import { icons } from '../../config';
 
 import Flex from '../Flex';
 import Icon from './';

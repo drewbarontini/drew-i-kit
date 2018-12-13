@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import theme from '../../config/theme';
+import { theme } from '../../config';
 import GlobalStyles from '../GlobalStyles';
 
 export default function withStyledComponents(Component) {

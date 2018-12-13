@@ -43,11 +43,42 @@ The primary application-level components in your application.
 ### Config
 Configuration files: `theme.js`, `icons.js`, etc.
 
+```
+├── config
+│   └── tests
+│   │   └── icons.test.js
+│   └── icons.js
+│   └── theme.js
+│   └── index.js
+```
+
 ### Lib
 Library files, such as utilities and helpers.
 
+```
+├── lib
+│   └── tests
+│   │   └── helpers.test.js
+│   │   └── utils.test.js
+│   └── helpers.js
+│   └── index.js
+│   └── utils.js
+```
+
 ### Routes
 Each route component.
+
+```
+├── routes
+│   └── tests
+│   │   └── Home.test.js
+│   │   └── About.test.js
+│   │   └── Contact.test.js
+│   └── About.js
+│   └── Contact.js
+│   └── Home.js
+│   └── index.js
+```
 
 ### index.js
 The entry point.

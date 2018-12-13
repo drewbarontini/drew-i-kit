@@ -1,6 +1,6 @@
 import React from 'react';
 
-import theme from '../../config/theme';
+import { theme } from '../../config';
 
 import Box from '../Box';
 import Card from '../Card';

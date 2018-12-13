@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { ThemeProvider } from 'styled-components';
 import 'normalize.css';
 
-import theme from '../config/theme';
+import { theme } from '../config';
 
 import GlobalStyles from '../components/GlobalStyles';
 

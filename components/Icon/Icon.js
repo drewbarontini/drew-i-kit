@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import icons from '../../config/icons';
+import { icons } from '../../config';
 
 import StyledIcon from './styled/Icon';
 

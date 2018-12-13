@@ -1,6 +1,6 @@
 // Config
 export { icons } from 'config/icons';
-export { theme } from 'config/theme';
+export { theme } from 'config';
 
 // Utilities
 export {

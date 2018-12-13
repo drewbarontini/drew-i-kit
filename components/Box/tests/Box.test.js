@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-testing-library';
 import 'jest-styled-components';
 
-import theme from '../../../config/theme';
+import { theme } from '../../../config';
 
 import Box from '../';
 
