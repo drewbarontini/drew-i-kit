@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> should render properly 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+<ul
+  class="c0"
+>
+  <li
+    data-testid="li"
+  >
+    One
+  </li>
+  <li
+    data-testid="li"
+  >
+    Two
+  </li>
+  <li
+    data-testid="li"
+  >
+    Three
+  </li>
+</ul>
+`;
