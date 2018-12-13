@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.5.0 - 2018-12-13
+
+### Changed
+- `Heading` spacing
+
 ## v0.4.0 - 2018-12-13
 
 ### Added
