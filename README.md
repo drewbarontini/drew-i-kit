@@ -12,6 +12,11 @@ After building several UIKits in React with Styled Components, I decided to buil
 - `styled-tools`
 - `lodash`
 
+## Installing
+```
+yarn install drew-i-kit
+```
+
 ## Testing
 - `yarn storybook` to load up Storybook and view the components
 - `yarn test` to run all of the unit tests
