@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Table /> should render properly 1`] = `
+.c0 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.c0 th,
+.c0 td {
+  border-top: 1px solid;
+  text-align: left;
+  vertical-align: top;
+}
+
+.c0 thead th {
+  border-bottom: 1px solid;
+  border-top: 0;
+  padding-top: 0;
+  vertical-align: bottom;
+}
+
+.c0 tbody + tbody {
+  border-top: 1px solid;
+}
+
+<table
+  class="c0"
+>
+  <thead>
+    <tr>
+      <th>
+        Foo
+      </th>
+      <th>
+        Bar
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Hello
+      </td>
+      <td>
+        Table
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
