@@ -8,14 +8,14 @@ import List from '../';
 
 describe('<List />', () => {
   it('should render properly', () => {
-    const { container, queryAllByTestId } = render(
+    const { container } = render(
       <List theme={theme}>
-        <li data-testid="li">One</li>
-        <li data-testid="li">Two</li>
-        <li data-testid="li">Three</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
       </List>
     );
     expect(container.firstChild).toMatchSnapshot();
-    expect(queryAllByTestId('li')).toHaveLength(3);
+    expect(container.firstChild.childNodes.length).toBe(3);
   });
 });

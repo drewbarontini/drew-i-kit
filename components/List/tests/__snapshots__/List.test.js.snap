@@ -14,19 +14,13 @@ exports[`<List /> should render properly 1`] = `
 <ul
   class="c0"
 >
-  <li
-    data-testid="li"
-  >
+  <li>
     One
   </li>
-  <li
-    data-testid="li"
-  >
+  <li>
     Two
   </li>
-  <li
-    data-testid="li"
-  >
+  <li>
     Three
   </li>
 </ul>
