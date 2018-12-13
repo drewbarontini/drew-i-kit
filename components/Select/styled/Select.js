@@ -8,7 +8,7 @@ const Select = styled.select`
     prop: 'size',
     cssProp: 'width',
     fallback: '200px',
-  })}
+  })};
 `;
 
 Select.propTypes = {
