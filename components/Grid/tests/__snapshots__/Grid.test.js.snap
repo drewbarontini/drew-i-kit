@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<A /> should render properly 1`] = `
+.c0 {
+  display: grid;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class=""
+  >
+    Hello
+  </div>
+  <div
+    class=""
+  >
+    Grid
+  </div>
+</div>
+`;
