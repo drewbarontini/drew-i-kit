@@ -16,5 +16,9 @@ describe('<Heading />', () => {
       'font-size',
       theme.fonts.sizes.h1
     );
+    expect(container.firstChild).toHaveStyleRule(
+      'margin-bottom',
+      theme.spacing.s
+    );
   });
 });
