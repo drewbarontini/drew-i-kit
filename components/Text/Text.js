@@ -36,6 +36,10 @@ const Text = styled.p`
     prop: 'letterSpacing',
     cssProp: 'letter-spacing',
   })};
+  ${setProp({
+    prop: 'textAlign',
+    cssProp: 'text-align',
+  })};
 `;
 
 Text.displayName = 'Text';
@@ -46,6 +50,7 @@ Text.propTypes = {
   fontStyle: PropTypes.string,
   fontWeight: PropTypes.string,
   letterSpacing: PropTypes.string,
+  textAlign: PropTypes.string,
   uppercase: PropTypes.boolean,
 };
 
