@@ -15,6 +15,8 @@ const theme = {
     error: '#fe5f55',
     success: '#8acb88',
     warning: '#ffc527',
+    white: '#fff',
+    black: '#272727',
   },
   fonts: {
     family: {
@@ -47,11 +49,10 @@ const theme = {
     base: '0 3px 3px rgba(0, 0, 0, 0.25);',
   },
   spacing: {
-    base: '16px',
+    base: '20px',
     xs: '5px',
     s: '10px',
-    m: '12px',
-    l: '32px',
+    l: '40px',
     xl: '60px',
   },
   transition: {
