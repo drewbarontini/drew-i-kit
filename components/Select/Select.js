@@ -7,7 +7,9 @@ const Select = ({ name, placeholder, options, ...rest }) => (
   <StyledSelect name={name} id={name} {...rest}>
     <option value="">{placeholder}</option>
     {options.map((option, index) => (
-      <option value={option.value}>{option.label}</option>
+      <option key={index} value={option.value}>
+        {option.label}
+      </option>
     ))}
   </StyledSelect>
 );
