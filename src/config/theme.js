@@ -48,6 +48,11 @@ const theme = {
   shadows: {
     base: '0 3px 3px rgba(0, 0, 0, 0.25);',
   },
+  sizing: {
+    s: '400px',
+    base: '900px',
+    l: '1200px',
+  },
   spacing: {
     base: '20px',
     xs: '5px',

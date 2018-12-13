@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cell /> should render properly 1`] = `
+.c0 {
+  max-width: 900px;
+}
+
+<div
+  class="c0"
+>
+  My Cell
+</div>
+`;

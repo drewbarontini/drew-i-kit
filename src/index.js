@@ -18,6 +18,7 @@ export { default as Avatar } from './components/Avatar';
 export { default as Box } from './components/Box';
 export { default as Button } from './components/Button';
 export { default as Card } from './components/Card';
+export { default as Cell } from './components/Cell';
 export { default as Checkbox } from './components/Checkbox';
 export { default as Divider } from './components/Divider';
 export { default as Flex, default as FlexItem } from './components/Flex';
