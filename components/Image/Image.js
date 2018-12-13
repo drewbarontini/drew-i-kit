@@ -63,6 +63,7 @@ class Image extends Component {
           onLoad={this.handleLoad}
           onError={this.handleError}
           isLoaded={isLoaded}
+          data-testid="image"
           {...props}
         />
       </Fragment>
