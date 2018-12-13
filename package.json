@@ -2,11 +2,13 @@
   "name": "drew-i-kit",
   "version": "0.1.0",
   "description": "A collection of highly compose-able React components.",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "jest --watch",
+    "build": "babel src --out-dir dist --ignore 'src/**/**/**/*.test.js','src/**/**/*.story.js'",
+    "build-storybook": "build-storybook",
+    "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "styled-tools": "^1.6.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
