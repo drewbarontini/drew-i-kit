@@ -46,7 +46,7 @@ Text.propTypes = {
   fontWeight: PropTypes.string,
   letterSpacing: PropTypes.string,
   textAlign: PropTypes.string,
-  uppercase: PropTypes.boolean,
+  uppercase: PropTypes.bool,
 };
 
 export default Text;
