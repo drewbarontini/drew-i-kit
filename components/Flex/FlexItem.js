@@ -9,6 +9,10 @@ const FlexItem = styled.div`
     cssProp: 'flex-basis',
   })};
   ${setProp({
+    prop: 'margin',
+    themeKey: 'spacing',
+  })};
+  ${setProp({
     prop: 'marginRight',
     cssProp: 'margin-right',
     themeKey: 'spacing',
@@ -16,6 +20,7 @@ const FlexItem = styled.div`
 `;
 
 FlexItem.propTypes = {
+  margin: PropTypes.string,
   marginRight: PropTypes.string,
   size: PropTypes.string,
 };
