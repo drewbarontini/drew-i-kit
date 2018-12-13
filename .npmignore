@@ -1,1 +1,5 @@
 src
+.storybook
+*.config.js
+*.setup.js
+.babelrc
