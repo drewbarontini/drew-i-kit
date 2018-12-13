@@ -7,7 +7,7 @@ import theme from '../../../config/theme';
 import A from '../';
 
 describe('<A />', () => {
-  it('should work', () => {
+  it('should render properly', () => {
     const { container } = render(
       <A href="#0" theme={theme}>
         My Link

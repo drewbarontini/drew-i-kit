@@ -7,7 +7,7 @@ import theme from '../../../config/theme';
 import Avatar from '../';
 
 describe('<Avatar />', () => {
-  it('should match snapshot', () => {
+  it('should render properly', () => {
     const { container } = render(
       <Avatar src="IMG_SRC" alt="Alt Text" width="50" height="50" />
     );

@@ -7,7 +7,7 @@ import theme from '../../../config/theme';
 import Box from '../';
 
 describe('<Box />', () => {
-  it('should match snapshot', () => {
+  it('should render properly', () => {
     const { container } = render(
       <Box backgroundColor="primary" padding="base" theme={theme} />
     );
