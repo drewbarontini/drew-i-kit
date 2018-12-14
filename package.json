@@ -7,10 +7,11 @@
     "build": "babel src --out-dir dist --ignore 'src/**/**/**/*.test.js','src/**/**/*.story.js'",
     "build-storybook": "build-storybook",
     "lint": "node_modules/eslint/bin/eslint.js",
-    "prebuild": "npm run lint src/ && jest && rm -rf dist/",
+    "prebuild": "npm run qa && rm -rf dist/",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "qa": "npm run lint src/ && jest"
   },
   "repository": {
     "type": "git",
