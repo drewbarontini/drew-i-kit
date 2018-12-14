@@ -19,3 +19,4 @@ export { default as Space } from './Space';
 export { default as Table } from './Table';
 export { default as Text } from './Text';
 export { default as TextInput } from './TextInput';
+export { default as withStyledComponents } from './withStyledComponents';
