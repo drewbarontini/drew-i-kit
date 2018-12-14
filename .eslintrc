@@ -23,6 +23,7 @@
   "rules": {
     "strict": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/no-array-index-key": 0,
     "class-methods-use-this": 0,
     "no-param-reassign": 0,
     "no-underscore-dangle": 0,
