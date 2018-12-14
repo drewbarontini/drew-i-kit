@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, palette } from '../../lib/utils';
+import { setProp, palette } from '../../lib';
 
 const Divider = styled.div`
   ${setProp({

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifNotProp } from 'styled-tools';
 
-import { hover, palette, setProp } from '../../lib/utils';
+import { hover, palette, setProp } from '../../lib';
 
 const A = styled.a`
   color: ${palette('primary')};

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, palette, theme } from '../../lib/utils';
+import { setProp, palette, theme } from '../../lib';
 
 const Box = styled.div`
   ${setProp({

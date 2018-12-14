@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp } from '../../lib/utils';
+import { setProp } from '../../lib';
 
 const Flex = styled.div`
   display: flex;

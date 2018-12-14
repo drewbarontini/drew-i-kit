@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { theme, palette } from '../../../lib/utils';
+import { theme, palette } from '../../../lib';
 
 const Table = styled.table`
   border-collapse: collapse;

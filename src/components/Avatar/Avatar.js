@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { theme, palette } from '../../lib/utils';
+import { theme, palette } from '../../lib';
 
 import Image from '../Image';
 

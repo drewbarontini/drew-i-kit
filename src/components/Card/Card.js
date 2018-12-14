@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Box from '../Box';
 
-import { setProp, theme, palette } from '../../lib/utils';
+import { setProp, theme, palette } from '../../lib';
 
 const Card = styled(Box)`
   background-color: ${palette('white')};

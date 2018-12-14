@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { theme, palette, hover } from '../../lib/utils';
+import { theme, palette, hover } from '../../lib';
 
 const Button = styled.button`
   background-color: ${ifProp('primary', palette('primary'), 'transparent')};
