@@ -9,6 +9,12 @@ const theme = {
       base: '3px',
     },
   },
+  breakpoints: {
+    s: 380,
+    m: 768,
+    l: 900,
+    xl: 1100,
+  },
   colors: {
     bg: '#fff',
     fg: '#272727',
