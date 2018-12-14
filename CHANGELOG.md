@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.8.0 - 2018-12-14
+
+### Added
+- `ThemeProvider` wrapper component
+
+### Removed
+- `withStyledComponents` component
+
 ## v0.7.0 - 2018-12-14
 
 ### Changed
