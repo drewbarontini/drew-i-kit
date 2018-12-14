@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
-import { hover, palette, setProp } from '../../lib';
+import { hover, palette, setProp, responsive } from '../../lib';
 
 const A = styled.a`
   color: ${palette('primary')};
@@ -30,6 +30,8 @@ const A = styled.a`
         ? palette(props['data-hover-color'])
         : palette('fg')};
   `)};
+
+  ${responsive}
 `;
 
 A.propTypes = {

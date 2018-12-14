@@ -24,4 +24,13 @@ storiesOf('A', module)
     <A href="#0" data-hover-color="subdued">
       Link
     </A>
+  ))
+  .add('responsive', () => (
+    <A
+      href="#0"
+      breakpointAt="s"
+      breakpointStyles={theme => `color: ${theme.colors.error};`}
+    >
+      Link
+    </A>
   ));
