@@ -36,7 +36,7 @@ export const setProp = ({
   if (calculatedCssProp && !calculatedThemeKey) {
     if (!value && !calculatedFallback) return null;
 
-    return `${calculatedCssProp}: ${value ? value : calculatedFallback};`;
+    return `${calculatedCssProp}: ${value || calculatedFallback};`;
   }
 
   if (!calculatedCssProp && calculatedThemeKey) {
@@ -51,9 +51,8 @@ export const setProp = ({
 
   if (!value && !calculatedFallback) return null;
 
-  return `${get(cssProps, calculatedProp, calculatedProp)}: ${
-    value ? value : calculatedFallback
-  };`;
+  return `${get(cssProps, calculatedProp, calculatedProp)}: ${value ||
+    calculatedFallback};`;
 };
 
 // theme('spacing.base') => '20px'

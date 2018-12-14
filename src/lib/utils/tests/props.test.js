@@ -1,4 +1,4 @@
-import { palette, setProp, theme } from '../';
+import { palette, setProp, theme } from '..';
 
 const themeObject = {
   colors: {

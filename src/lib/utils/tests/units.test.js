@@ -1,4 +1,4 @@
-import { intToStyleUnit, styleUnitMath, styleUnitToInt } from '../';
+import { intToStyleUnit, styleUnitMath, styleUnitToInt } from '..';
 
 describe('intToStyleUnit()', () => {
   it('should convert a pixel string to an integer', () => {
