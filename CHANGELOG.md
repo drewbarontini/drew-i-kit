@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.7.0 - 2018-12-14
+
+### Changed
+- Updated `withStyledComponents` to be more customizable and exported
+- Made the `icons` integrated to the `theme` for use in `ThemeProvider`
+
 ## v0.6.0 - 2018-12-14
 
 ### Added
