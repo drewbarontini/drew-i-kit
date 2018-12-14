@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Button from '../';
+import Button from '..';
 
 describe('<Button />', () => {
   it('should render properly', () => {

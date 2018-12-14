@@ -4,11 +4,11 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Image from '../';
+import Image from '..';
 
 describe('<Image />', () => {
   it('should render a placeholder image initially', () => {
-    const { getByTestId, debug } = render(
+    const { getByTestId } = render(
       <Image src="https://placehold.it/50x50" alt="Placeholder" theme={theme} />
     );
     expect(getByTestId('image')).toHaveAttribute('src');

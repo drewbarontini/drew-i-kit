@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import TextInput from '../';
+import TextInput from '..';
 
 describe('<TextInput />', () => {
   it('should render properly', () => {

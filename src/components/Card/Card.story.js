@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Card from './';
+import Card from '.';
 import List from '../List';
 
 storiesOf('Card', module)

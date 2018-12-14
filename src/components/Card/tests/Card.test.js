@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Card from '../';
+import Card from '..';
 
 describe('<Card />', () => {
   it('should render properly', () => {

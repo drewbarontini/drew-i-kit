@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import A from './';
+import A from '.';
 
 storiesOf('A', module)
   .add('default', () => <A href="#0">Link</A>)

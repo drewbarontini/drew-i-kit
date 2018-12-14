@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import List from '../';
+import List from '..';
 
 describe('<List />', () => {
   it('should render properly', () => {

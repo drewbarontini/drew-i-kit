@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import Box from '../Box';
-import Flex, { FlexItem } from './';
+import Flex, { FlexItem } from '.';
 
 storiesOf('Flex', module).add('default', () => (
   <Flex>

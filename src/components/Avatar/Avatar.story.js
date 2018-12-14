@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Avatar from './';
+import Avatar from '.';
 
 const standardProps = {
   src: 'https://source.unsplash.com/random/200x200',

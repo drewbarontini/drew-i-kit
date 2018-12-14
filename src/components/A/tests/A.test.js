@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import A from '../';
+import A from '..';
 
 describe('<A />', () => {
   it('should render properly', () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Heading from './';
+import Heading from '.';
 
 storiesOf('Heading', module)
   .add('default', () => <Heading>Hello, Heading!</Heading>)

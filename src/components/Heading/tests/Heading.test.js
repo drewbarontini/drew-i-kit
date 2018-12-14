@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Heading from '../';
+import Heading from '..';
 
 describe('<Heading />', () => {
   it('should render properly', () => {

@@ -4,12 +4,18 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Avatar from '../';
+import Avatar from '..';
 
 describe('<Avatar />', () => {
   it('should render properly', () => {
-    const { container, debug } = render(
-      <Avatar src="IMG_SRC" alt="Alt Text" width="50" height="50" />
+    const { container } = render(
+      <Avatar
+        themme={theme}
+        src="IMG_SRC"
+        alt="Alt Text"
+        width="50"
+        height="50"
+      />
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toHaveAttribute('height');

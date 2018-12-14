@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Table from './';
+import Table from '.';
 
 storiesOf('Table', module).add('default', () => (
   <Table

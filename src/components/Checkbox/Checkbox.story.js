@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Checkbox from './';
+import Checkbox from '.';
 import Flex, { FlexItem } from '../Flex';
 import Text from '../Text';
 

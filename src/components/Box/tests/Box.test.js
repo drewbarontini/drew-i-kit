@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Box from '../';
+import Box from '..';
 
 describe('<Box />', () => {
   it('should render properly', () => {

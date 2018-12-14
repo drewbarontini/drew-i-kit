@@ -3,28 +3,26 @@ import PropTypes from 'prop-types';
 
 import StyledTable from './styled/Table';
 
-const Table = ({ headings, data } = {}) => {
-  return (
-    <StyledTable>
-      <thead>
-        <tr>
-          {headings.map((heading, index) => (
-            <th key={index}>{heading.title}</th>
+const Table = ({ headings, data }) => (
+  <StyledTable>
+    <thead>
+      <tr>
+        {headings.map((heading, index) => (
+          <th key={index}>{heading.title}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {data.map((item, index) => (
+        <tr key={index}>
+          {headings.map((heading, hindex) => (
+            <td key={hindex}>{item[heading.key]}</td>
           ))}
         </tr>
-      </thead>
-      <tbody>
-        {data.map((item, index) => (
-          <tr key={index}>
-            {headings.map((heading, index) => (
-              <td key={index}>{item[heading.key]}</td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </StyledTable>
-  );
-};
+      ))}
+    </tbody>
+  </StyledTable>
+);
 
 Table.propTypes = {
   headings: PropTypes.arrayOf(

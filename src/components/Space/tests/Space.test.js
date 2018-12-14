@@ -4,11 +4,11 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Space from '../';
+import Space from '..';
 
 describe('<Space />', () => {
   it('should render properly', () => {
-    const { container, debug } = render(
+    const { container } = render(
       <Space theme={theme} bottom="base">
         Hello, Space!
       </Space>

@@ -41,6 +41,13 @@ Icon.propTypes = {
   width: PropTypes.string,
 };
 
+Icon.defaultProps = {
+  color: null,
+  height: '20',
+  size: '20',
+  width: '20',
+};
+
 Icon.displayName = 'Icon';
 
 export default Icon;

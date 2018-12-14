@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Flex, { FlexItem } from '../';
+import Flex, { FlexItem } from '..';
 
 describe('<Flex />', () => {
   it('should render properly', () => {

@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Table from '../';
+import Table from '..';
 
 describe('<Table />', () => {
   it('should render properly', () => {

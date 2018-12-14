@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Cell from '../';
+import Cell from '..';
 
 describe('<Cell />', () => {
   it('should render properly', () => {

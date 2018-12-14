@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Grid, { GridItem } from '../';
+import Grid, { GridItem } from '..';
 
 describe('<A />', () => {
   it('should render properly', () => {

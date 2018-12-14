@@ -4,11 +4,11 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Select from '../';
+import Select from '..';
 
 describe('<Select />', () => {
   it('should render properly', () => {
-    const { container, debug } = render(
+    const { container } = render(
       <Select
         theme={theme}
         name="select"

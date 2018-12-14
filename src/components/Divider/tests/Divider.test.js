@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Divider from '../';
+import Divider from '..';
 
 describe('<Divider />', () => {
   it('should render properly', () => {

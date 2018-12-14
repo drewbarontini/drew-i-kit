@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 import StyledTextInput from './styled/TextInput';
 
-const TextInput = ({ type, name, ...rest }) => (
+const TextInput = ({ type = 'text', name, ...rest }) => (
   <StyledTextInput type={type} name={name} id={name} {...rest} />
 );
 
 TextInput.propTypes = {
   name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
 };
 
 TextInput.defaultProps = {

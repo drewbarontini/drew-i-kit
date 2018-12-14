@@ -4,8 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { icons } from '../../config';
 
 import Flex from '../Flex';
-import Icon from './';
-import { Object } from 'es6-shim';
+import Icon from '.';
 
 storiesOf('Icon', module)
   .add('default', () => (

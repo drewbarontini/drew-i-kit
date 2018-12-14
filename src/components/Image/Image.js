@@ -14,7 +14,11 @@ class Image extends Component {
   };
 
   static defaultProps = {
+    alt: '',
+    height: null,
     onLoaded: () => {},
+    src: '',
+    width: null,
   };
 
   state = {

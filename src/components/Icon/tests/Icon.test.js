@@ -4,11 +4,11 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Icon from '../';
+import Icon from '..';
 
 describe('<Icon />', () => {
   it('should render properly', () => {
-    const { container, debug } = render(<Icon name="circle" theme={theme} />);
+    const { container } = render(<Icon name="circle" theme={theme} />);
     expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild.tagName.toLowerCase()).toEqual('svg');
     expect(container.firstChild.childNodes.length).toBe(1);

@@ -5,7 +5,7 @@ import { theme } from '../../config';
 import GlobalStyles from '../GlobalStyles';
 
 export default function withStyledComponents(Component) {
-  return function(props) {
+  return function fn(props) {
     return (
       <ThemeProvider theme={theme}>
         <Fragment>

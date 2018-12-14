@@ -6,7 +6,6 @@ import Box from '../Box';
 import Card from '../Card';
 import Flex, { FlexItem } from '../Flex';
 import Text from '../Text';
-import { Object } from 'es6-shim';
 
 const Colors = () => (
   <Flex flexWrap="wrap">

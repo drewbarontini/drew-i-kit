@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import Box from '../Box';
 import Flex from '../Flex';
-import Grid, { GridItem } from './';
+import Grid, { GridItem } from '.';
 import Text from '../Text';
 
 storiesOf('Grid', module).add('default', () => (

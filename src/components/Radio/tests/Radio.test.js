@@ -4,11 +4,11 @@ import 'jest-styled-components';
 
 import { theme } from '../../../config';
 
-import Radio from '../';
+import Radio from '..';
 
 describe('<A />', () => {
   it('should render properly', () => {
-    const { container, debug } = render(<Radio name="radio" theme={theme} />);
+    const { container } = render(<Radio name="radio" theme={theme} />);
     expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild.tagName.toLowerCase()).toEqual('input');
     expect(container.firstChild).toHaveAttribute('id');

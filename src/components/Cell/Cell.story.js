@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Cell from './';
+import Cell from '.';
 import Text from '../Text';
 
 const content = `
