@@ -2,12 +2,13 @@
 
 import { css } from 'styled-components';
 
+import { styleUnitToInt } from './units';
 import { theme as defaultTheme } from '../../config';
 
 const { breakpoints: sizes } = defaultTheme;
 
 export const breakpoint = Object.keys(sizes).reduce((accumulator, label) => {
-  const emSize = sizes[label] / 16;
+  const emSize = sizes[label] / styleUnitToInt(defaultTheme.fonts.sizes.base);
 
   accumulator[label] = (...args) => css`
     @media (max-width: ${emSize}em) {
