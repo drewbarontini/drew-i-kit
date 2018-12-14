@@ -8,9 +8,12 @@ describe('withStyledComponents()', () => {
     const App = () => <p>My App!</p>;
     const ThemedApp = withStyledComponents({ component: App });
     const { container } = render(<ThemedApp />);
+    const component = ThemedApp();
     expect(container.childNodes.length).toBe(1);
     expect(container.childNodes[0].tagName.toLowerCase()).toEqual('p');
     expect(container).toHaveTextContent('My App!');
+    expect(component.props.theme).not.toBeNull();
+    expect(component.props.theme.icons).not.toBeNull();
   });
 
   it('should allow passing custom global styles', () => {

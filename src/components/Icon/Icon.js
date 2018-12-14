@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import { icons } from '../../config';
+import { withTheme } from 'styled-components';
 
 import StyledIcon from './styled/Icon';
 
@@ -11,6 +10,7 @@ const Icon = ({
   height = '20',
   size = '20',
   width = '20',
+  theme,
   ...props
 }) => {
   const newWidth = size || width;
@@ -24,10 +24,10 @@ const Icon = ({
       viewBox="0 0 20 20"
       {...props}
     >
-      {Array.isArray(icons[name]) ? (
-        icons[name].map((d, i) => <path key={i} d={d} />)
+      {Array.isArray(theme.icons[name]) ? (
+        theme.icons[name].map((d, i) => <path key={i} d={d} />)
       ) : (
-        <path d={icons[name]} />
+        <path d={theme.icons[name]} />
       )}
     </StyledIcon>
   );
@@ -50,4 +50,4 @@ Icon.defaultProps = {
 
 Icon.displayName = 'Icon';
 
-export default Icon;
+export default withTheme(Icon);

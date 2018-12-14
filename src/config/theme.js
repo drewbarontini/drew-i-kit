@@ -1,3 +1,5 @@
+import { icons } from '.';
+
 const theme = {
   borders: {
     sizes: {
@@ -44,6 +46,9 @@ const theme = {
       semiBold: 600,
       bold: 800,
     },
+  },
+  icons: {
+    ...icons,
   },
   shadows: {
     base: '0 3px 3px rgba(0, 0, 0, 0.25);',
