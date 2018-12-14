@@ -1,0 +1,40 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "react-app",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["flowtype", "import", "jsx-a11y", "prettier", "react"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "strict": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "class-methods-use-this": 0,
+    "no-param-reassign": 0,
+    "no-underscore-dangle": 0,
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [".storybook/**", "src/components/**/*"]
+      }
+    ]
+  },
+  "settings": {
+    "import/core-modules": ["styled-components"]
+  }
+}
