@@ -2,6 +2,21 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.6.0 - 2018-12-14
+
+### Added
+- ESLint
+- `prettier` and `.prettierrc`
+- Additional `package.json` scripts
+
+### Changed
+- Updated `README`
+- Better `index.js` loader files
+- More customizable `Card` component
+
+### Fixed
+- ESLint errors
+
 ## v0.5.0 - 2018-12-13
 
 ### Changed
