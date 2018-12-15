@@ -28,8 +28,10 @@ storiesOf('A', module)
   .add('responsive', () => (
     <A
       href="#0"
-      breakpointAt="s"
-      breakpointStyles={theme => `color: ${theme.colors.error};`}
+      breakpoints={[
+        { size: 's', styles: theme => `color: ${theme.colors.error};` },
+        { size: 'm', styles: theme => `color: ${theme.colors.success};` },
+      ]}
     >
       Link
     </A>

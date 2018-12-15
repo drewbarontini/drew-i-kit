@@ -2,30 +2,26 @@
 
 import { css } from 'styled-components';
 
-import { styleUnitToInt } from './units';
 import { theme as defaultTheme } from '../../config';
 
 const { breakpoints: sizes } = defaultTheme;
 
-export const breakpoint = Object.keys(sizes).reduce((accumulator, label) => {
-  const emSize = sizes[label] / styleUnitToInt(defaultTheme.fonts.sizes.base);
-
-  accumulator[label] = (...args) => css`
-    @media (max-width: ${emSize}em) {
-      ${css(...args)};
-    }
-  `;
-
-  return accumulator;
-}, {});
-
 export const responsive = props => {
-  const { breakpointStyles, breakpointAt, theme } = props;
+  const { breakpoints, theme } = props;
+  const queries = [];
 
-  if (breakpointStyles && breakpointAt) {
-    return css`
-      ${breakpoint[breakpointAt]`${breakpointStyles(theme)}`}
-    `;
+  if (breakpoints && Array.isArray(breakpoints)) {
+    breakpoints.map(bp => {
+      const size = sizes[bp.size] ? sizes[bp.size] : bp.size;
+
+      return queries.push(css`
+        @media screen and (max-width: ${size}px) {
+          ${bp.styles(theme)};
+        }
+      `);
+    });
+
+    return queries.reverse();
   }
 
   return null;
