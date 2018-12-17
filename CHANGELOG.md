@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.11.0 - 2018-12-17
+
+### Added
+- New color management!
+
 ## v0.10.0 - 2018-12-17
 
 ### Changed
