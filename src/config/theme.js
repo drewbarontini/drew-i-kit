@@ -1,4 +1,4 @@
-import { icons } from '.';
+import { colors, icons } from '.';
 
 const theme = {
   borders: {
@@ -20,15 +20,7 @@ const theme = {
     unit: 'px',
   },
   colors: {
-    bg: '#fff',
-    fg: '#272727',
-    primary: '#3576a7',
-    subdued: '#cbcbcb',
-    error: '#fe5f55',
-    success: '#8acb88',
-    warning: '#ffc527',
-    white: '#fff',
-    black: '#272727',
+    ...colors,
   },
   fonts: {
     family: {
