@@ -3,6 +3,9 @@
 
 ⚠️ **This is also a highly combustable playground as I build it out. Things will break, and it's not really recommended to use this in a production environment until v1 is reached.** ⚠️
 
+![Build Status][badge-build]
+![Version][badge-version]
+
 ## Why?
 After building several UIKits in React with Styled Components, I decided to build out my own little UIKit that I could start projects from. I'm calling it "drew-i-kit". Get it? 😜
 
@@ -92,3 +95,6 @@ Each route component.
 
 ### index.js
 The entry point.
+
+[badge-build]: https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?style=flat-square
+[badge-version]: https://img.shields.io/npm/v/drew-i-kit.svg?style=flat-square
