@@ -10,10 +10,14 @@ const theme = {
     },
   },
   breakpoints: {
-    s: 380,
-    m: 768,
-    l: 900,
-    xl: 1100,
+    sizes: {
+      s: 380,
+      m: 768,
+      l: 900,
+      xl: 1100,
+    },
+    query: 'max-width',
+    unit: 'px',
   },
   colors: {
     bg: '#fff',
