@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hideAndShow() should generate a hiding and showing query 1`] = `
+Array [
+  Object {
+    "size": "l",
+    "styles": [Function],
+  },
+  Object {
+    "size": "s",
+    "styles": [Function],
+  },
+]
+`;
+
+exports[`hideAndShow() should generate a hiding query 1`] = `
+Array [
+  Object {
+    "size": "s",
+    "styles": [Function],
+  },
+]
+`;

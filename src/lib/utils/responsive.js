@@ -4,11 +4,34 @@ import { css } from 'styled-components';
 
 import { styleUnitToInt } from '..';
 
-const getUnitSize = (unit, breakpointSize, baseFontSize) =>
-  unit === 'em'
-    ? styleUnitToInt(breakpointSize, unit) / styleUnitToInt(baseFontSize, unit)
-    : breakpointSize;
+// breakpoints={hideAndShow({ hideAt: ['s'] })};
+export const hideAndShow = ({ hideAt, showAt }) => {
+  const queries = [];
 
+  hideAt &&
+    hideAt.map(size => {
+      const query = {
+        size,
+        styles: () => `display: none;`,
+      };
+
+      return queries.push(query);
+    });
+
+  showAt &&
+    showAt.map(size => {
+      const query = {
+        size,
+        styles: () => `display: block;`,
+      };
+
+      return queries.push(query);
+    });
+
+  return queries.reverse();
+};
+
+// ${props => breakpoint(props).s`color: blue;`};
 export const breakpoint = props => {
   const { theme } = props;
   const { sizes, unit, query } = theme.breakpoints;
@@ -26,6 +49,7 @@ export const breakpoint = props => {
   }, {});
 };
 
+// ${responsive};
 export const responsive = props => {
   const { breakpoints, theme } = props;
   const { sizes, unit, query } = theme.breakpoints;
@@ -51,3 +75,9 @@ export const responsive = props => {
 
   return null;
 };
+
+// getUnitSize('px', 600, '16px); => '600px'
+const getUnitSize = (unit, breakpointSize, baseFontSize) =>
+  unit === 'em'
+    ? styleUnitToInt(breakpointSize, unit) / styleUnitToInt(baseFontSize, unit)
+    : breakpointSize;
