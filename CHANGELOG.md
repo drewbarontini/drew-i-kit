@@ -2,6 +2,15 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.9.0 - 2018-12-17
+
+### Added
+- Responsiveness to components through `breakpoints` prop (and helpers)
+- `microbundle` to manage the bundling of the package
+
+### Changed
+- Moved `styled-components` out of the bundle
+
 ## v0.8.0 - 2018-12-14
 
 ### Added
