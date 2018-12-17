@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.10.0 - 2018-12-17
+
+### Changed
+- `microbundle` command to pass `--jsx React.createElement`
+
 ## v0.9.0 - 2018-12-17
 
 ### Added
