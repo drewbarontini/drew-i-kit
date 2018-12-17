@@ -2,7 +2,7 @@
 
 import { css } from 'styled-components';
 
-import { styleUnitToInt } from '..';
+import { styleUnitToInt } from '.';
 
 // breakpoints={hideAndShow({ hideAt: ['s'] })};
 export const hideAndShow = ({ hideAt, showAt }) => {
@@ -79,5 +79,6 @@ export const responsive = props => {
 // getUnitSize('px', 600, '16px); => '600px'
 const getUnitSize = (unit, breakpointSize, baseFontSize) =>
   unit === 'em'
-    ? styleUnitToInt(breakpointSize, unit) / styleUnitToInt(baseFontSize, unit)
+    ? styleUnitToInt(breakpointSize.toString(), unit) /
+      styleUnitToInt(baseFontSize, unit)
     : breakpointSize;

@@ -70,5 +70,23 @@ describe('responsive()', () => {
     expect(query).toContain('color: blue;');
   });
 
-  it('should return em-based breakpoints', () => {});
+  it('should return em-based breakpoints', () => {
+    const props = {
+      theme: {
+        breakpoints: {
+          sizes: {
+            s: 300,
+          },
+          query: 'max-width',
+          unit: 'em',
+        },
+        fonts: { sizes: { base: '16px' } },
+      },
+      breakpoints: [{ size: 's', styles: () => `color: red;` }],
+    };
+    const query = cleanupMediaQuery(responsive(props));
+    expect(query).toContain('@media');
+    expect(query).toContain('max-width');
+    expect(query).toContain('18.75em');
+  });
 });
