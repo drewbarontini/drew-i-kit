@@ -5,7 +5,7 @@
   "source": "./index.js",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "microbundle",
+    "build": "microbundle --jsx React.createElement",
     "build-storybook": "build-storybook",
     "lint": "node_modules/eslint/bin/eslint.js",
     "prebuild": "npm run qa && rm -rf dist/",
