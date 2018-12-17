@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import StyledRadio from './styled/Radio';
+
 const Radio = ({ name, ...rest }) => (
-  <input type="radio" name={name} id={name} {...rest} />
+  <StyledRadio type="radio" name={name} id={name} {...rest} />
 );
 
 Radio.propTypes = {

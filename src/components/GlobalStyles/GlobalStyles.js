@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { palette, theme } from '../../lib';
+import { palette, theme, responsive } from '../../lib';
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -29,6 +29,8 @@ const GlobalStyles = createGlobalStyle`
     display: block;
     max-width: 100%;
   }
+
+  ${responsive};
 `;
 
 GlobalStyles.displayName = 'GlobalStyles';

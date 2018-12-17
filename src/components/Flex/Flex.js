@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp } from '../../lib';
+import { setProp, responsive } from '../../lib';
 
 const Flex = styled.div`
   display: flex;
@@ -21,6 +21,8 @@ const Flex = styled.div`
   ${setProp({ prop: 'flexWrap' })};
   ${setProp({ prop: 'height' })};
   ${setProp({ prop: 'justifyContent' })};
+
+  ${responsive};
 `;
 
 Flex.displayName = 'Flex';

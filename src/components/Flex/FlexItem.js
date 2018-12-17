@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../lib';
+import { setProp, responsive } from '../../lib';
 
 const FlexItem = styled.div`
   ${setProp({
@@ -16,6 +16,8 @@ const FlexItem = styled.div`
     prop: 'marginRight',
     themeKey: 'spacing',
   })};
+
+  ${responsive};
 `;
 
 FlexItem.propTypes = {

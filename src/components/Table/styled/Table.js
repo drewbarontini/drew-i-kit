@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { theme, palette } from '../../../lib';
+import { theme, palette, responsive } from '../../../lib';
 
 const Table = styled.table`
   border-collapse: collapse;
@@ -24,6 +24,8 @@ const Table = styled.table`
   tbody + tbody {
     border-top: 1px solid ${palette('subdued')};
   }
+
+  ${responsive};
 `;
 
 Table.displayName = 'Table';

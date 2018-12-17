@@ -10,8 +10,9 @@
     "prebuild": "npm run qa && rm -rf dist/",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
+    "test:all": "jest",
     "test": "jest --watch",
-    "qa": "npm run lint src/ && jest"
+    "qa": "npm run lint src/ && npm run test:all"
   },
   "repository": {
     "type": "git",

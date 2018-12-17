@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../../lib';
+import { setProp, responsive } from '../../../lib';
 
 const Select = styled.select`
   ${setProp({
@@ -9,6 +9,8 @@ const Select = styled.select`
     cssProp: 'width',
     fallback: '200px',
   })};
+
+  ${responsive};
 `;
 
 Select.propTypes = {

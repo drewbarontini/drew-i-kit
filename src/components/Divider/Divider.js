@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, palette } from '../../lib';
+import { setProp, palette, responsive } from '../../lib';
 
 const Divider = styled.div`
   ${setProp({
@@ -28,6 +28,8 @@ const Divider = styled.div`
     prop: props => ifProp('vertical', 'height', 'width')(props),
     fallback: '100%',
   })};
+
+  ${responsive};
 `;
 
 Divider.propTypes = {

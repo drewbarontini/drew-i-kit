@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../lib';
+import { setProp, responsive } from '../../lib';
 
 const Grid = styled.div`
   display: grid;
@@ -67,6 +67,8 @@ const Grid = styled.div`
     prop: 'template',
     cssProp: 'grid-template',
   })};
+
+  ${responsive};
 `;
 
 Grid.propTypes = {

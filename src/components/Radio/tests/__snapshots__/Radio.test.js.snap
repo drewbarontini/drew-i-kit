@@ -2,9 +2,9 @@
 
 exports[`<A /> should render properly 1`] = `
 <input
+  class=""
   id="radio"
   name="radio"
-  theme="[object Object]"
   type="radio"
 />
 `;
