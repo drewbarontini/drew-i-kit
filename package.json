@@ -5,7 +5,7 @@
   "source": "./index.js",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --ignore 'src/**/**/**/*.test.js','src/**/**/*.story.js'",
+    "build": "microbundle",
     "build-storybook": "build-storybook",
     "lint": "node_modules/eslint/bin/eslint.js",
     "prebuild": "npm run qa && rm -rf dist/",
@@ -61,6 +61,7 @@
     "jest": "^23.6.0",
     "jest-dom": "^3.0.0",
     "jest-styled-components": "^6.3.1",
+    "microbundle": "^0.8.3",
     "prettier": "^1.15.3",
     "prettier-eslint": "^8.8.2",
     "react-testing-library": "^5.3.2",
