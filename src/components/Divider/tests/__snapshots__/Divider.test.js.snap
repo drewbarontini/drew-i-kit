@@ -2,7 +2,7 @@
 
 exports[`<Divider /> should render properly 1`] = `
 .c0 {
-  background-color: #cbcbcb;
+  background-color: #dcdcdc;
   height: 1px;
   width: 100%;
 }

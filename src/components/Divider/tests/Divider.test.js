@@ -13,7 +13,7 @@ describe('<Divider />', () => {
     expect(container.firstChild.tagName.toLowerCase()).toEqual('div');
     expect(container.firstChild).toHaveStyleRule(
       'background-color',
-      theme.colors.subdued
+      theme.colors.border
     );
     expect(container.firstChild).toHaveStyleRule('height', '1px');
     expect(container.firstChild).toHaveStyleRule('width', '100%');

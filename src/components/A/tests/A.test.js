@@ -17,7 +17,10 @@ describe('<A />', () => {
     expect(container.firstChild.tagName.toLowerCase()).toEqual('a');
     expect(container.firstChild).toHaveTextContent('My Link');
     expect(container.firstChild).toHaveAttribute('href');
-    expect(container.firstChild).toHaveStyleRule('color', theme.colors.primary);
+    expect(container.firstChild).toHaveStyleRule(
+      'color',
+      theme.colors.primary.base
+    );
     expect(container.firstChild).toHaveStyleRule('text-decoration', 'none');
   });
 });

@@ -9,7 +9,7 @@ import Box from '..';
 describe('<Box />', () => {
   it('should render properly', () => {
     const { container } = render(
-      <Box backgroundColor="primary" padding="base" theme={theme}>
+      <Box backgroundColor="primary.base" padding="base" theme={theme}>
         My Box
       </Box>
     );
@@ -18,7 +18,7 @@ describe('<Box />', () => {
     expect(container.firstChild).toHaveTextContent('My Box');
     expect(container.firstChild).toHaveStyleRule(
       'background-color',
-      theme.colors.primary
+      theme.colors.primary.base
     );
     expect(container.firstChild).toHaveStyleRule('padding', theme.spacing.base);
   });
