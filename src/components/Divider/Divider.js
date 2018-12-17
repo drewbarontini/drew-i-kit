@@ -9,7 +9,7 @@ const Divider = styled.div`
     prop: 'color',
     cssProp: 'background-color',
     themeKey: 'colors',
-    fallback: props => palette('subdued')(props),
+    fallback: props => palette('border')(props),
   })};
   ${setProp({
     prop: 'size',

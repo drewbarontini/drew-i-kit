@@ -27,7 +27,7 @@ storiesOf('Text', module)
       fontWeight="bold"
       uppercase
       letterSpacing="2px"
-      color="primary"
+      color="primary.base"
     >
       Hello, Text
     </Text>
@@ -39,7 +39,7 @@ storiesOf('Text', module)
       fontWeight="bold"
       uppercase
       letterSpacing="2px"
-      color="primary"
+      color="primary.base"
     >
       Hello, Text
     </Text>

@@ -7,10 +7,10 @@ import Flex, { FlexItem } from '.';
 storiesOf('Flex', module).add('default', () => (
   <Flex>
     <FlexItem marginRight="base">
-      <Box width="200px" height="200px" backgroundColor="primary" />
+      <Box width="200px" height="200px" backgroundColor="primary.base" />
     </FlexItem>
     <FlexItem>
-      <Box width="200px" height="200px" backgroundColor="primary" />
+      <Box width="200px" height="200px" backgroundColor="primary.base" />
     </FlexItem>
   </Flex>
 ));

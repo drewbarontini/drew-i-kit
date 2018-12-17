@@ -29,7 +29,7 @@ storiesOf('Icon', module)
           key={index}
           marginRight="s"
           size="40"
-          color="primary"
+          color="primary.base"
         />
       ))}
     </Flex>

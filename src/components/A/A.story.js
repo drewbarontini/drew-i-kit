@@ -6,7 +6,7 @@ import A from '.';
 storiesOf('A', module)
   .add('default', () => <A href="#0">Link</A>)
   .add('color', () => (
-    <A href="#0" color="subdued">
+    <A href="#0" color="neutral.base">
       Link
     </A>
   ))
@@ -21,7 +21,7 @@ storiesOf('A', module)
     </A>
   ))
   .add('hover color', () => (
-    <A href="#0" data-hover-color="subdued">
+    <A href="#0" data-hover-color="neutral.base">
       Link
     </A>
   ))
@@ -29,8 +29,14 @@ storiesOf('A', module)
     <A
       href="#0"
       breakpoints={[
-        { size: 's', styles: theme => `color: ${theme.colors.error};` },
-        { size: 'm', styles: theme => `color: ${theme.colors.success};` },
+        {
+          size: 's',
+          styles: theme => `color: ${theme.colors.accent.red.base};`,
+        },
+        {
+          size: 'm',
+          styles: theme => `color: ${theme.colors.accent.green.base};`,
+        },
       ]}
     >
       Link

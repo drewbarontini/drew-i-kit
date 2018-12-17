@@ -18,7 +18,7 @@ storiesOf('Grid', module).add('default', () => (
   "
   >
     <GridItem area="hd">
-      <Box height="100%" backgroundColor="primary" padding="base">
+      <Box height="100%" backgroundColor="primary.base" padding="base">
         <Flex center height="100%">
           <Text color="bg" fontWeight="bold" uppercase>
             Header
@@ -27,7 +27,7 @@ storiesOf('Grid', module).add('default', () => (
       </Box>
     </GridItem>
     <GridItem area="sd">
-      <Box height="100%" backgroundColor="primary" padding="base">
+      <Box height="100%" backgroundColor="primary.base" padding="base">
         <Flex center height="100%">
           <Text color="bg" fontWeight="bold" uppercase>
             Sidebar
@@ -36,7 +36,7 @@ storiesOf('Grid', module).add('default', () => (
       </Box>
     </GridItem>
     <GridItem area="mn">
-      <Box height="100%" backgroundColor="primary" padding="base">
+      <Box height="100%" backgroundColor="primary.base" padding="base">
         <Flex center height="100%">
           <Text color="bg" fontWeight="bold" uppercase>
             Main
@@ -45,7 +45,7 @@ storiesOf('Grid', module).add('default', () => (
       </Box>
     </GridItem>
     <GridItem area="ft">
-      <Box height="100%" backgroundColor="primary" padding="base">
+      <Box height="100%" backgroundColor="primary.base" padding="base">
         <Flex center height="100%">
           <Text color="bg" fontWeight="bold" uppercase>
             Footer

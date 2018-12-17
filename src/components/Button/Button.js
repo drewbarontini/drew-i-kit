@@ -5,7 +5,11 @@ import { ifProp } from 'styled-tools';
 import { theme, palette, hover, responsive } from '../../lib';
 
 const Button = styled.button`
-  background-color: ${ifProp('primary', palette('primary'), 'transparent')};
+  background-color: ${ifProp(
+    'primary',
+    palette('primary.base'),
+    'transparent'
+  )};
   border: 0;
   border: 2px solid ${ifProp('primary', 'transparent', palette('fg'))};
   border-radius: ${theme('borders.radius.base')}
@@ -22,8 +26,8 @@ const Button = styled.button`
 
   ${hover(css`
     background-color: ${ifProp('primary', palette('fg'), 'transparent')};
-    border-color: ${ifProp('primary', 'transparent', palette('primary'))};
-    color: ${ifProp('primary', palette('white'), palette('primary'))};
+    border-color: ${ifProp('primary', 'transparent', palette('primary.base'))};
+    color: ${ifProp('primary', palette('white'), palette('primary.base'))};
   `)}
 
   ${responsive};

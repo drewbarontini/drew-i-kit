@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { hover, palette, setProp, responsive } from '../../lib';
 
 const A = styled.a`
-  color: ${palette('primary')};
+  color: ${palette('primary.base')};
   text-decoration: none;
 
   ${setProp({

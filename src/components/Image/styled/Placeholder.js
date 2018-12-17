@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { palette, responsive } from '../../../lib';
 
 const Placeholder = styled.div`
-  background-color: ${palette('subdued')};
+  background-color: ${palette('neutral.light[4]')};
   height: ${props => props.height}px;
   width: ${props => props.width}px;
 

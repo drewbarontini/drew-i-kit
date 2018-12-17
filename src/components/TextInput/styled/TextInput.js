@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { theme, palette, setProp, responsive } from '../../../lib';
 
 const TextInput = styled.input`
-  border: ${theme('borders.sizes.base')} solid ${palette('subdued')};
+  border: ${theme('borders.sizes.base')} solid ${palette('neutral.light[3]')};
   border-radius: ${theme('borders.radius.base')};
 
   ${setProp({
@@ -20,7 +20,7 @@ const TextInput = styled.input`
   ${setProp({ prop: 'width', fallback: '100%' })};
 
   &:focus {
-    border-color: ${palette('primary')};
+    border-color: ${palette('primary.base')};
     outline: none;
   }
 

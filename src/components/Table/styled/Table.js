@@ -8,21 +8,21 @@ const Table = styled.table`
 
   th,
   td {
-    border-top: 1px solid ${palette('subdued')};
+    border-top: 1px solid ${palette('border')};
     padding: ${theme('spacing.base')};
     text-align: left;
     vertical-align: top;
   }
 
   thead th {
-    border-bottom: 1px solid ${palette('subdued')};
+    border-bottom: 1px solid ${palette('border')};
     border-top: 0;
     padding-top: 0;
     vertical-align: bottom;
   }
 
   tbody + tbody {
-    border-top: 1px solid ${palette('subdued')};
+    border-top: 1px solid ${palette('border')};
   }
 
   ${responsive};
