@@ -3,6 +3,12 @@ import { responsive } from '..';
 describe('responsive()', () => {
   it('should return the correct breakpoints', () => {
     const props = {
+      theme: {
+        breakpoints: {
+          s: 300,
+          l: 800,
+        },
+      },
       breakpoints: [
         { size: 's', styles: () => `color: red;` },
         { size: 'l', styles: () => `color: green;` },

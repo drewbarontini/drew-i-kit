@@ -2,12 +2,9 @@
 
 import { css } from 'styled-components';
 
-import { theme as defaultTheme } from '../../config';
-
-const { breakpoints: sizes } = defaultTheme;
-
 export const responsive = props => {
   const { breakpoints, theme } = props;
+  const sizes = theme.breakpoints;
   const queries = [];
 
   if (breakpoints && Array.isArray(breakpoints)) {
