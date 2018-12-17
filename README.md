@@ -16,7 +16,7 @@ After building several UIKits in React with Styled Components, I decided to buil
 
 ## Installing
 ```
-yarn install drew-i-kit
+yarn install drew-i-kit styled-components
 ```
 
 ## Testing

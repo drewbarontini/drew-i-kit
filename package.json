@@ -2,6 +2,7 @@
   "name": "drew-i-kit",
   "version": "0.8.0",
   "description": "A collection of highly compose-able React components.",
+  "source": "./index.js",
   "main": "./dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist --ignore 'src/**/**/**/*.test.js','src/**/**/*.story.js'",
@@ -32,7 +33,6 @@
     "lodash": "^4.17.11",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.6.2",
-    "styled-components": "^4.1.2",
     "styled-tools": "^1.6.0"
   },
   "devDependencies": {
@@ -64,9 +64,11 @@
     "prettier": "^1.15.3",
     "prettier-eslint": "^8.8.2",
     "react-testing-library": "^5.3.2",
-    "regenerator-runtime": "^0.13.1"
+    "regenerator-runtime": "^0.13.1",
+    "styled-components": "^4.1.2"
   },
   "peerDependencies": {
-    "react": "^16.6.3"
+    "react": "^16.6.3",
+    "styled-components": "^4.1.2"
   }
 }
