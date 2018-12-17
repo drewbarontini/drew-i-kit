@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../../lib';
+import { setProp, responsive } from '../../../lib';
 
 const Icon = styled.svg`
   align-self: center;
@@ -22,6 +22,8 @@ const Icon = styled.svg`
     prop: 'marginRight',
     themeKey: 'spacing',
   })};
+
+  ${responsive};
 `;
 
 Icon.propTypes = {

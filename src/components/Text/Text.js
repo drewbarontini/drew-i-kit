@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, theme } from '../../lib';
+import { setProp, theme, responsive } from '../../lib';
 
 const Text = styled.p`
   font-size: ${theme('fonts.sizes.base')};
@@ -35,6 +35,8 @@ const Text = styled.p`
   ${setProp({
     prop: 'textAlign',
   })};
+
+  ${responsive};
 `;
 
 Text.displayName = 'Text';

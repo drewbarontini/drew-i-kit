@@ -6,7 +6,7 @@ import { ifProp } from 'styled-tools';
 
 import Box from '../Box';
 
-import { setProp, theme, palette } from '../../lib';
+import { setProp, theme, palette, responsive } from '../../lib';
 
 const Card = styled(Box)`
   ${setProp({
@@ -36,6 +36,8 @@ const Card = styled(Box)`
     themeKey: 'spacing',
     fallback: props => theme('spacing.base')(props),
   })};
+
+  ${responsive};
 `;
 
 Card.propTypes = {

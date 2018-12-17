@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { palette } from '../../../lib';
+import { palette, responsive } from '../../../lib';
 
 const Placeholder = styled.div`
   background-color: ${palette('subdued')};
   height: ${props => props.height}px;
   width: ${props => props.width}px;
+
+  ${responsive};
 `;
 
 Placeholder.propTypes = {

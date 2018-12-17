@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { theme, setProp } from '../../lib';
+import { theme, setProp, responsive } from '../../lib';
 
 const List = styled.ul`
   margin: 0;
@@ -24,6 +24,8 @@ const List = styled.ul`
   > *:not(:last-child) {
     margin-bottom: ${props => (props.flush ? '0' : theme('spacing.s'))};
   }
+
+  ${responsive};
 `;
 
 List.propTypes = {

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, palette, theme } from '../../lib';
+import { setProp, palette, theme, responsive } from '../../lib';
 
 const Box = styled.div`
   ${setProp({
@@ -28,6 +28,8 @@ const Box = styled.div`
   ${setProp({ prop: 'right', themeKey: 'spacing' })};
   ${setProp({ prop: 'top', themeKey: 'spacing' })};
   ${setProp({ prop: 'width' })};
+
+  ${responsive};
 `;
 
 Box.propTypes = {

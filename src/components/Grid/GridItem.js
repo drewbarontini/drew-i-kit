@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../lib';
+import { setProp, responsive } from '../../lib';
 
 const GridItem = styled.div`
   ${setProp({
@@ -41,6 +41,8 @@ const GridItem = styled.div`
     prop: 'rowEnd',
     cssProp: 'grid-row-end',
   })};
+
+  ${responsive};
 `;
 
 GridItem.propTypes = {

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp } from '../../lib';
+import { setProp, responsive } from '../../lib';
 
 const Space = styled.div`
   ${setProp({
@@ -24,6 +24,8 @@ const Space = styled.div`
     cssProp: 'margin-top',
     themeKey: 'spacing',
   })};
+
+  ${responsive};
 `;
 
 Space.propTypes = {

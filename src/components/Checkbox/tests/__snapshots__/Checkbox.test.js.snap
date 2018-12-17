@@ -2,9 +2,9 @@
 
 exports[`<Checkbox /> should render properly 1`] = `
 <input
+  class=""
   id="checkbox"
   name="checkbox"
-  theme="[object Object]"
   type="checkbox"
 />
 `;

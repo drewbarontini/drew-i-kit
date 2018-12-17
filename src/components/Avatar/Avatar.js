@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { theme, palette } from '../../lib';
+import { theme, palette, responsive } from '../../lib';
 
 import Image from '../Image';
 
@@ -23,6 +23,8 @@ const Avatar = styled(Image)`
       border-radius: 100%;
     `
   )}
+
+  ${responsive};
 `;
 
 Avatar.propTypes = {

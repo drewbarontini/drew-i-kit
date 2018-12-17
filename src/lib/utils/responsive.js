@@ -52,7 +52,7 @@ export const breakpoint = props => {
 // ${responsive};
 export const responsive = props => {
   const { breakpoints, theme } = props;
-  const { sizes, unit, query } = theme.breakpoints;
+  const { sizes, unit, query } = theme.breakpoints || {};
   const queries = [];
 
   if (breakpoints && Array.isArray(breakpoints)) {
