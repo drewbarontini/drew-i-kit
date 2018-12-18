@@ -26,75 +26,11 @@ yarn install drew-i-kit styled-components
 - `yarn storybook` to load up Storybook and view the components
 - `yarn test` to run all of the unit tests
 
+## Documentation
+Read the [docs](https://github.com/drewbarontini/drew-i-kit/blob/master/docs) to learn more about the library.
+
 ## Inspiration
 [Reakit](https://reakit.io) and [Grommet](https://v2.grommet.io) are two _excellent_ React UI libraries built on top of Styled Components. Although they are great, I'm far too opinionated on styling to fully adopt another solution such as those. With that being the case, that's why I've built this, but I've learned a lot from how those great libraries are put together 🙏
-
-## File Structure
-Here is my (currently) preferred file structure for React apps (usually starts in a `src/` directory):
-
-```
-├── components
-├── config
-├── lib
-├── styled
-├── routes
-├── index.js
-```
-
-### Components
-The primary application-level components in your application.
-
-```
-├── ComponentName
-│   └── tests
-│   │   └── ComponentName.test.js
-│   └── ComponentName.js
-│   └── ComponentName.story.js
-│   └── index.js
-```
-
-### Config
-Configuration files: `theme.js`, `icons.js`, etc.
-
-```
-├── config
-│   └── tests
-│   │   └── icons.test.js
-│   └── icons.js
-│   └── theme.js
-│   └── index.js
-```
-
-### Lib
-Library files, such as utilities and helpers.
-
-```
-├── lib
-│   └── tests
-│   │   └── helpers.test.js
-│   │   └── utils.test.js
-│   └── helpers.js
-│   └── index.js
-│   └── utils.js
-```
-
-### Routes
-Each route component.
-
-```
-├── routes
-│   └── tests
-│   │   └── Home.test.js
-│   │   └── About.test.js
-│   │   └── Contact.test.js
-│   └── About.js
-│   └── Contact.js
-│   └── Home.js
-│   └── index.js
-```
-
-### index.js
-The entry point.
 
 [badge-build]: https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser/master.svg?style=flat-square
 [badge-version]: https://img.shields.io/npm/v/drew-i-kit.svg?style=flat-square
