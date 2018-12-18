@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.16.0 - 2018-12-18
+
+### Added
+- Better documentation
+
+### Changed
+- Updated `PropType` definitions
+
 ## v0.15.0 - 2018-12-18
 
 ### Added

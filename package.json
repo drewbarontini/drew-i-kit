@@ -1,6 +1,6 @@
 {
   "name": "drew-i-kit",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "description": "A collection of highly compose-able React components.",
   "source": "./index.js",
   "main": "./dist/index.js",
