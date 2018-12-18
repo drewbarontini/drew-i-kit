@@ -27,6 +27,7 @@ const Box = styled.div`
   ${setProp({ prop: 'padding', themeKey: 'spacing' })};
   ${setProp({ prop: 'position' })};
   ${setProp({ prop: 'right', themeKey: 'spacing' })};
+  ${setProp({ prop: 'textAlign' })};
   ${setProp({ prop: 'top', themeKey: 'spacing' })};
   ${setProp({ prop: 'width' })};
 
@@ -42,6 +43,7 @@ Box.propTypes = {
   padding: PropTypes.string,
   position: PropTypes.string,
   right: PropTypes.string,
+  textAlign: PropTypes.string,
   top: PropTypes.string,
   width: PropTypes.string,
 };
