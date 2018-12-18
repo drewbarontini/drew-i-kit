@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import StyledTextInput from './styled/TextInput';
 
-const TextInput = ({ type = 'text', name, ...rest }) => (
+const TextInput = ({ type, name, ...rest }) => (
   <StyledTextInput type={type} name={name} id={name} {...rest} />
 );
 

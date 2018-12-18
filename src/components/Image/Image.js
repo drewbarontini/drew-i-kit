@@ -6,18 +6,16 @@ import StyledImage from './styled/Image';
 
 class Image extends Component {
   static propTypes = {
-    alt: PropTypes.string,
+    alt: PropTypes.string.isRequired,
     height: PropTypes.string,
     onLoaded: PropTypes.func,
-    src: PropTypes.string,
+    src: PropTypes.string.isRequired,
     width: PropTypes.string,
   };
 
   static defaultProps = {
-    alt: '',
     height: null,
     onLoaded: () => {},
-    src: '',
     width: null,
   };
 

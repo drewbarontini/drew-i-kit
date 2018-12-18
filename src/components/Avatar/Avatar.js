@@ -29,8 +29,12 @@ const Avatar = styled(Image)`
 `;
 
 Avatar.propTypes = {
+  alt: PropTypes.string.isRequired,
+  height: PropTypes.string,
   raised: PropTypes.string,
   rounded: PropTypes.string,
+  src: PropTypes.string.isRequired,
+  width: PropTypes.string,
 };
 
 Avatar.displayName = 'Avatar';

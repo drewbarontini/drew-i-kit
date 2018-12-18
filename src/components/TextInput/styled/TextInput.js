@@ -30,7 +30,6 @@ const TextInput = styled.input`
 
 TextInput.propTypes = {
   fontSize: PropTypes.string,
-  name: PropTypes.string.isRequired,
   padding: PropTypes.string,
   width: PropTypes.string,
 };

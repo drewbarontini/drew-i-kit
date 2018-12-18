@@ -30,7 +30,7 @@ const List = styled.ul`
 `;
 
 List.propTypes = {
-  flush: PropTypes.string,
+  flush: PropTypes.bool,
   type: PropTypes.string,
 };
 
