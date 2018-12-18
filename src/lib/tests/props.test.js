@@ -1,4 +1,4 @@
-import { palette, setProp, theme } from '../props';
+import { palette, setProp, spacing, theme } from '../props';
 
 const themeObject = {
   colors: {
@@ -62,6 +62,38 @@ describe('setProp()', () => {
         fallback: props => theme('spacing.base')(props),
       })({ theme: themeObject })
     ).toEqual('padding: 20px;');
+  });
+});
+
+describe('spacing()', () => {
+  it('should return the correct spacing props', () => {
+    const props = {
+      theme: {
+        spacing: {
+          base: '20px',
+        },
+      },
+      margin: 'base',
+      marginBottom: 'base',
+      marginLeft: 'base',
+      marginRight: 'base',
+      marginTop: 'base',
+      padding: 'base',
+      paddingBottom: 'base',
+      paddingLeft: 'base',
+      paddingRight: 'base',
+      paddingTop: 'base',
+    };
+    expect(spacing(props)).toContain('margin:20px;');
+    expect(spacing(props)).toContain('margin-bottom:20px;');
+    expect(spacing(props)).toContain('margin-left:20px;');
+    expect(spacing(props)).toContain('margin-right:20px;');
+    expect(spacing(props)).toContain('margin-top:20px;');
+    expect(spacing(props)).toContain('padding:20px;');
+    expect(spacing(props)).toContain('padding-bottom:20px;');
+    expect(spacing(props)).toContain('padding-left:20px;');
+    expect(spacing(props)).toContain('padding-right:20px;');
+    expect(spacing(props)).toContain('padding-top:20px;');
   });
 });
 

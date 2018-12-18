@@ -1,4 +1,6 @@
+import { css } from 'styled-components';
 import get from 'lodash/get';
+import capitalize from 'lodash/capitalize';
 
 import cssProps from '../config/cssProps';
 
@@ -53,6 +55,34 @@ export const setProp = ({
 
   return `${get(cssProps, calculatedProp, calculatedProp)}: ${value ||
     calculatedFallback};`;
+};
+
+export const spacing = props => {
+  const properties = ['margin', 'padding'];
+  const directions = ['bottom', 'left', 'right', 'top'];
+  const spacingProps = [];
+
+  properties.map(property => {
+    spacingProps.push(css`
+      ${setProp({ prop: property, themeKey: 'spacing' })(props)};
+    `);
+
+    return directions.map(direction =>
+      spacingProps.push(css`
+        ${setProp({
+          prop: `${property}${capitalize(direction)}`,
+          themeKey: 'spacing',
+        })(props)};
+      `)
+    );
+  });
+
+  return spacingProps
+    .join('')
+    .replace(/,/g, '')
+    .replace(/;;/g, ';')
+    .replace(/\n/g, '')
+    .replace(/\s/g, '');
 };
 
 // theme('spacing.base') => '20px'

@@ -218,6 +218,22 @@ Since `setProp()` implicitly accepts the `props` from the styled component, the
 `fallback` key (and any of the other keys in `setProp()`) can be a function that
 will provide the `props` that can then be passed to `theme()` or `palette()`.
 
+### `spacing`
+`spacing()` will generate `setProp()` with the `theme.spacing` key for `margin`
+and `padding`, as well as each side (e.g. `margin-left`, `padding-top`, etc.).
+
+```javascript
+import styled from 'styled-components';
+
+import { spacing } from '.';
+
+const Button = styled(Button)`
+  ${spacing};
+`;
+
+// <Button padding="base" />
+```
+
 ### `breakpoint`
 `breakpoint()` pulls out the `theme.breakpoints.sizes` and creates a quick-access
 variable to generate a media query in your styled component
