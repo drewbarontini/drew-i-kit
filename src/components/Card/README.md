@@ -1,6 +1,6 @@
 # Card
 
-## Usage
+### Usage
 
 ```jsx
 import { Card } from 'drew-i-kit';
@@ -27,7 +27,7 @@ import { Card } from 'drew-i-kit';
 </Card>
 ```
 
-## Props
+### Props
 
 - `backgroundColor` (**string**, optional)
 - `color` (**string**, optional)

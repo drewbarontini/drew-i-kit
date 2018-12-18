@@ -1,6 +1,6 @@
 # Icon
 
-## Usage
+### Usage
 
 ```jsx
 import { Icon } from 'drew-i-kit';
@@ -15,7 +15,7 @@ import { Icon } from 'drew-i-kit';
 <Icon name="user" size="40" color="primary.base" />
 ```
 
-## Props
+### Props
 
 - `color` (**string**, optional)
 - `height` (**string**, optional)

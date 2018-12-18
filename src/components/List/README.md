@@ -1,6 +1,6 @@
 # List
 
-## Usage
+### Usage
 
 ```jsx
 import { List } from 'drew-i-kit';
@@ -30,7 +30,7 @@ import { List } from 'drew-i-kit';
 </List>
 ```
 
-## Props
+### Props
 
 - `flush` (**Boolean**, optional)
 - `type` (**string**, optional)

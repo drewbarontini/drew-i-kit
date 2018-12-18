@@ -1,6 +1,6 @@
 # TextInput
 
-## Usage
+### Usage
 
 ```jsx
 import { TextInput } from 'drew-i-kit';
@@ -16,7 +16,7 @@ import { TextInput } from 'drew-i-kit';
 <TextInput name="input" width="200px" />
 ```
 
-## Props
+### Props
 
 - `fontSize` (**string**, optional)
 - `name` (**string**)

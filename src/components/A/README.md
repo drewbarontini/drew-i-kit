@@ -1,6 +1,6 @@
 # A
 
-## Usage
+### Usage
 
 ```jsx
 import { A } from 'drew-i-kit';
@@ -17,7 +17,7 @@ import { A } from 'drew-i-kit';
 <A href="#0" data-hover-color="neutral.base">My Link</A>
 ```
 
-## Props
+### Props
 
 - `color` (**string**, optional)
 - `fontSize` (**string**, optional)

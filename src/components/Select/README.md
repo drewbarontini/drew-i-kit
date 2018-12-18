@@ -1,6 +1,6 @@
 # Select
 
-## Usage
+### Usage
 
 ```jsx
 import { Select } from 'drew-i-kit';
@@ -21,7 +21,7 @@ import { Select } from 'drew-i-kit';
 />
 ```
 
-## Props
+### Props
 
 - `name` (**string**)
 - `options` (**Object**)

@@ -1,6 +1,6 @@
 # Table
 
-## Usage
+### Usage
 
 ```jsx
 import { Table } from 'drew-i-kit';
@@ -23,7 +23,7 @@ import { Table } from 'drew-i-kit';
 />
 ```
 
-## Props
+### Props
 
 - `headings` (**Array**)
 - `data` (**Array**)

@@ -1,6 +1,6 @@
 # GlobalStyles
 
-## Usage
+### Usage
 
 ```jsx
 import { DefaultGlobalStyles } from 'drew-i-kit';

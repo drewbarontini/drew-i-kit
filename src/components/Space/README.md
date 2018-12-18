@@ -1,6 +1,6 @@
 # Space
 
-## Usage
+### Usage
 
 ```jsx
 import { Space } from 'drew-i-kit';
@@ -24,7 +24,7 @@ import { Space } from 'drew-i-kit';
 </Space>
 ```
 
-## Props
+### Props
 
 - `bottom` (**string**, optional)
 - `left` (**string**, optional)

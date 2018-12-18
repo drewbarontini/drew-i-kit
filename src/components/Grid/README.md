@@ -1,6 +1,6 @@
 # Grid
 
-## Usage
+### Usage
 
 ```jsx
 import { Grid, GridItem } from 'drew-i-kit';
@@ -43,7 +43,7 @@ import { A } from 'drew-i-kit';
 </Grid>
 ```
 
-## Props
+### Props
 
 #### `Grid`
 - `alignContent` (**string**, optional)

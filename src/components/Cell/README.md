@@ -1,6 +1,6 @@
 # Cell
 
-## Usage
+### Usage
 
 ```jsx
 import { Cell } from 'drew-i-kit';
@@ -24,7 +24,7 @@ import { Cell } from 'drew-i-kit';
 </Cell>
 ```
 
-## Props
+### Props
 
 - `center` (**Boolean**, optional)
 - `minWidth` (**string**, optional)

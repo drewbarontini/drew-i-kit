@@ -1,6 +1,6 @@
 # Text
 
-## Usage
+### Usage
 
 ```jsx
 import { Text } from 'drew-i-kit';
@@ -40,7 +40,7 @@ import { Text } from 'drew-i-kit';
 </Text>
 ```
 
-## Props
+### Props
 
 - `color` (**string**, optional)
 - `fontSize` (**string**, optional)

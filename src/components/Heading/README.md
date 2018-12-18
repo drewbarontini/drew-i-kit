@@ -1,6 +1,6 @@
 # Heading
 
-## Usage
+### Usage
 
 ```jsx
 import { Heading } from 'drew-i-kit';
@@ -15,7 +15,7 @@ import { Heading } from 'drew-i-kit';
 <Heading as="h2" fontSize="l">Heading</Heading>
 ```
 
-## Props
+### Props
 
 - `flush` (**string**, optional)
 - `fontSize` (**string**, optional)

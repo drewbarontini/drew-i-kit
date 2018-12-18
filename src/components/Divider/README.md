@@ -1,6 +1,6 @@
 # Divider
 
-## Usage
+### Usage
 
 ```jsx
 import { Divider } from 'drew-i-kit';
@@ -17,7 +17,7 @@ import { Divider } from 'drew-i-kit';
 <Divider size="4px" color="primary.base" width="50px" />
 ```
 
-## Props
+### Props
 
 - `color` (**string**, optional)
 - `marginBottom` (**string**, optional)

@@ -1,6 +1,6 @@
 # Avatar
 
-## Usage
+### Usage
 
 ```jsx
 import { Avatar } from 'drew-i-kit';
@@ -23,7 +23,7 @@ import { Avatar } from 'drew-i-kit';
 <Avatar rounded raised {...standardProps} />
 ```
 
-## Props
+### Props
 
 - `alt` (**string**)
 - `height` (**string**, optional)

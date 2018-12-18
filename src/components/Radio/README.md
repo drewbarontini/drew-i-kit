@@ -1,6 +1,6 @@
 # Radio
 
-## Usage
+### Usage
 
 ```jsx
 import { Radio } from 'drew-i-kit';
@@ -8,7 +8,7 @@ import { Radio } from 'drew-i-kit';
 <Radio name="radio" />
 ```
 
-## Props
+### Props
 
 - `name` (**string**)
 

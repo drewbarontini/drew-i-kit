@@ -1,6 +1,6 @@
 # Checkbox
 
-## Usage
+### Usage
 
 ```jsx
 import { Checkbox } from 'drew-i-kit';
@@ -8,7 +8,7 @@ import { Checkbox } from 'drew-i-kit';
 <Checkbox name="checkbox" />
 ```
 
-## Props
+### Props
 
 - `name` (**string**)
 

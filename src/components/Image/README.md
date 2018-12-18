@@ -1,6 +1,6 @@
 # Image
 
-## Usage
+### Usage
 
 ```jsx
 import { Image } from 'drew-i-kit';
@@ -23,7 +23,7 @@ import { Image } from 'drew-i-kit';
   height="200" />
 ```
 
-## Props
+### Props
 
 - `alt` (**string**)
 - `height` (**string**, optional)

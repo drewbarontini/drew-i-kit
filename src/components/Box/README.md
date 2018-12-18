@@ -1,6 +1,6 @@
 # Box
 
-## Usage
+### Usage
 
 ```jsx
 import { Box } from 'drew-i-kit';
@@ -20,7 +20,7 @@ import { Box } from 'drew-i-kit';
 </Box>
 ```
 
-## Props
+### Props
 
 - `backgroundColor` (**string**, optional)
 - `border` (**Boolean**, optional)

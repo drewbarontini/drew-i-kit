@@ -1,6 +1,6 @@
 # Flex
 
-## Usage
+### Usage
 
 ```jsx
 import { Flex, FlexItem } from 'drew-i-kit';
@@ -28,7 +28,7 @@ import { Flex, FlexItem } from 'drew-i-kit';
 </Flex>
 ```
 
-## Props
+### Props
 
 #### `Flex`
 - `alignItems` (**string**, optional)

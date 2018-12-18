@@ -1,6 +1,6 @@
 # ThemeProvider
 
-## Usage
+### Usage
 
 ```jsx
 import { ThemeProvider } from 'drew-i-kit';
@@ -39,7 +39,7 @@ const MyGlobalStyles = () => createGlobalStyle`
 </ThemeProvider>
 ```
 
-## Props
+### Props
 
 - `children` (**JSX**)
 - `GlobalStylesComponent` (**React Component**, optional)
