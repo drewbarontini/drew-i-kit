@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.15.0 - 2018-12-18
+
+### Added
+- `textAlign` prop to `Box`
+
 ## v0.14.0 - 2018-12-18
 
 ### Changed
