@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, palette, theme } from '../../lib/props';
+import { setProp, palette, theme, spacing } from '../../lib/props';
 import { responsive } from '../../lib/responsive';
 
 const Box = styled.div`
@@ -24,13 +24,13 @@ const Box = styled.div`
   ${setProp({ prop: 'display' })}
   ${setProp({ prop: 'height' })};
   ${setProp({ prop: 'left', themeKey: 'spacing' })};
-  ${setProp({ prop: 'padding', themeKey: 'spacing' })};
   ${setProp({ prop: 'position' })};
   ${setProp({ prop: 'right', themeKey: 'spacing' })};
   ${setProp({ prop: 'textAlign' })};
   ${setProp({ prop: 'top', themeKey: 'spacing' })};
   ${setProp({ prop: 'width' })};
 
+  ${spacing};
   ${responsive};
 `;
 
@@ -41,7 +41,16 @@ Box.propTypes = {
   display: PropTypes.string,
   height: PropTypes.string,
   left: PropTypes.string,
+  margin: PropTypes.string,
+  marginBottom: PropTypes.string,
+  marginLeft: PropTypes.string,
+  marginRight: PropTypes.string,
+  marginTop: PropTypes.string,
   padding: PropTypes.string,
+  paddingBottom: PropTypes.string,
+  paddingLeft: PropTypes.string,
+  paddingRight: PropTypes.string,
+  paddingTop: PropTypes.string,
   position: PropTypes.string,
   right: PropTypes.string,
   textAlign: PropTypes.string,
