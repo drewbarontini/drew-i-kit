@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.14.0 - 2018-12-18
+
+### Changed
+- `GlobalStyles` component now pulls in a separate `globalStyles` config
+- Internal `import` and `export` calls don't pull from `index.js` loader(s)
+
 ## v0.13.0 - 2018-12-18
 
 ### Fixed
