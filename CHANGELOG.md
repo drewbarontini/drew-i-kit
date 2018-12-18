@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.17.0 - 2018-12-18
+
+### Added
+- `spacing()` prop function
+
+### Changed
+- `Box` component to include `spacing()`
+
 ## v0.16.0 - 2018-12-18
 
 ### Added
