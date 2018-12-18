@@ -1,4 +1,4 @@
 # Docs
 
-- [file-structure](https://github.com/drewbarontini/drew-i-kit/blob/master/docs/file-structure.md)
-- [lib](https://github.com/drewbarontini/drew-i-kit/blob/master/docs/lib.md)
+- [Lib](https://github.com/drewbarontini/drew-i-kit/blob/master/docs/lib.md)
+- [File Structure](https://github.com/drewbarontini/drew-i-kit/blob/master/docs/file-structure.md)
