@@ -1,3 +1,6 @@
-export { theme as defaultTheme } from './config';
+export {
+  theme as defaultTheme,
+  globalStyles as defaultGlobalStyles,
+} from './config';
 export * from './lib';
 export * from './components';

@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { palette, responsive } from '../../../lib';
+import { palette } from '../../../lib/props';
+import { responsive } from '../../../lib/responsive';
 
 const Placeholder = styled.div`
   background-color: ${palette('neutral.light[4]')};

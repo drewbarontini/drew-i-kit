@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { responsive } from '../../../lib';
+import { responsive } from '../../../lib/responsive';
 
 const Radio = styled.input`
   ${responsive};

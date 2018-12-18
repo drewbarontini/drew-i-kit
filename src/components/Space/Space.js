@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { setProp, responsive } from '../../lib';
+import { setProp } from '../../lib/props';
+import { responsive } from '../../lib/responsive';
 
 const Space = styled.div`
   ${setProp({

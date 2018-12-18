@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import { theme } from '../../config';
+import theme from '../../config/theme';
 
 import Box from '../Box';
 import Flex, { FlexItem } from '../Flex';

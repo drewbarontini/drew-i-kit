@@ -1,4 +1,4 @@
-import { breakpoint, hideAndShow, responsive } from '..';
+import { breakpoint, hideAndShow, responsive } from '../responsive';
 
 const cleanupMediaQuery = array =>
   array

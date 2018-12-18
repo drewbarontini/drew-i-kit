@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { theme, palette, setProp, responsive } from '../../../lib';
+import { theme, palette, setProp } from '../../../lib/props';
+import { responsive } from '../../../lib/responsive';
 
 const TextInput = styled.input`
   border: ${theme('borders.sizes.base')} solid ${palette('neutral.light[3]')};

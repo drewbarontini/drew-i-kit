@@ -4,7 +4,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider as SCThemeProvider } from 'styled-components';
 
-import { theme as defaultTheme } from '../../config';
+import defaultTheme from '../../config/theme';
 import GlobalStyles from '../GlobalStyles';
 
 const ThemeProvider = ({

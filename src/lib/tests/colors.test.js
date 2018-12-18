@@ -1,4 +1,4 @@
-import { paletteFor } from '..';
+import { paletteFor } from '../colors';
 
 describe('paletteFor()', () => {
   it('should generate the palette', () => {

@@ -1,4 +1,4 @@
-import { paletteFor } from '../lib';
+import { paletteFor } from '../lib/colors';
 
 const colors = {
   ...paletteFor({

@@ -6,7 +6,8 @@ import { ifProp } from 'styled-tools';
 
 import Box from '../Box';
 
-import { setProp, theme, palette, responsive } from '../../lib';
+import { setProp, theme, palette } from '../../lib/props';
+import { responsive } from '../../lib/responsive';
 
 const Card = styled(Box)`
   ${setProp({

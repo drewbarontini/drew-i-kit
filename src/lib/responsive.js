@@ -2,7 +2,7 @@
 
 import { css } from 'styled-components';
 
-import { styleUnitToInt } from '.';
+import { styleUnitToInt } from './units';
 
 // breakpoints={hideAndShow({ hideAt: ['s'] })};
 export const hideAndShow = ({ hideAt, showAt }) => {

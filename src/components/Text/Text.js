@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, theme, responsive } from '../../lib';
+import { setProp, theme } from '../../lib/props';
+import { responsive } from '../../lib/responsive';
 
 const Text = styled.p`
   font-size: ${theme('fonts.sizes.base')};

@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, palette, responsive } from '../../lib';
+import { setProp, palette } from '../../lib/props';
+import { responsive } from '../../lib/responsive';
 
 const Divider = styled.div`
   ${setProp({

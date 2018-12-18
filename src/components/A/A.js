@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
-import { hover, palette, setProp, responsive } from '../../lib';
+import { hover } from '../../lib/hover';
+import { palette, setProp } from '../../lib/props';
+import { responsive } from '../../lib/responsive';
 
 const A = styled.a`
   color: ${palette('primary.base')};

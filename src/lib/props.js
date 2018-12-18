@@ -1,6 +1,6 @@
 import get from 'lodash/get';
 
-import { cssProps } from '../config';
+import cssProps from '../config/cssProps';
 
 // palette('white') => '#fff'
 export const palette = key => props => get(props.theme.colors, key);

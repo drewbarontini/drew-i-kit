@@ -1,4 +1,5 @@
-import { colors, icons } from '.';
+import colors from './colors';
+import icons from './icons';
 
 const theme = {
   borders: {
