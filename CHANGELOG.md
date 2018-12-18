@@ -2,6 +2,15 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.12.0 - 2018-12-18
+
+### Added
+- CI integration with CircleCI
+- New documentation
+
+### Changed
+- `Card` accepts `overflow` prop
+
 ## v0.11.0 - 2018-12-17
 
 ### Added
