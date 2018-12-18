@@ -32,6 +32,9 @@ const Card = styled(Box)`
     fallback: props => ifProp('flat', '0', theme('shadows.base')(props))(props),
   })};
   ${setProp({
+    prop: 'overflow',
+  })};
+  ${setProp({
     prop: 'padding',
     themeKey: 'spacing',
     fallback: props => theme('spacing.base')(props),
@@ -44,6 +47,7 @@ Card.propTypes = {
   backgroundColor: PropTypes.string,
   color: PropTypes.string,
   flat: PropTypes.bool,
+  overflow: PropTypes.string,
   padding: PropTypes.string,
   radius: PropTypes.string,
   shadow: PropTypes.string,
