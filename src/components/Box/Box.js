@@ -36,6 +36,7 @@ const Box = styled.div`
 
 Box.propTypes = {
   backgroundColor: PropTypes.string,
+  border: PropTypes.bool,
   bottom: PropTypes.string,
   display: PropTypes.string,
   height: PropTypes.string,
