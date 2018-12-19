@@ -2,18 +2,13 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, theme } from '../../lib/props';
+import { theme, typography } from '../../lib/props';
 import { responsive } from '../../lib/responsive';
 
 const Heading = styled.h1`
   font-size: ${theme('fonts.sizes.h1')};
   line-height: ${theme('fonts.lineHeight.heading')};
   margin: 0;
-
-  ${setProp({
-    prop: 'fontSize',
-    themeKey: 'fonts.sizes',
-  })}
 
   ${ifProp(
     'flush',
@@ -25,12 +20,19 @@ const Heading = styled.h1`
     `
   )}
 
+  ${typography};
   ${responsive};
 `;
 
 Heading.propTypes = {
   flush: PropTypes.string,
   fontSize: PropTypes.string,
+  fontStyle: PropTypes.string,
+  fontWeight: PropTypes.string,
+  lineHeight: PropTypes.string,
+  textAlign: PropTypes.string,
+  textDecoration: PropTypes.string,
+  textTransform: PropTypes.string,
 };
 
 Heading.displayName = 'Heading';

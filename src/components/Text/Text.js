@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import { setProp, theme } from '../../lib/props';
+import { setProp, theme, typography } from '../../lib/props';
 import { responsive } from '../../lib/responsive';
 
 const Text = styled.p`
@@ -19,24 +19,8 @@ const Text = styled.p`
     prop: 'color',
     themeKey: 'colors',
   })};
-  ${setProp({
-    prop: 'fontSize',
-    themeKey: 'fonts.sizes',
-  })};
-  ${setProp({
-    prop: 'fontStyle',
-  })};
-  ${setProp({
-    prop: 'fontWeight',
-    themeKey: 'fonts.weights',
-  })};
-  ${setProp({
-    prop: 'letterSpacing',
-  })};
-  ${setProp({
-    prop: 'textAlign',
-  })};
 
+  ${typography};
   ${responsive};
 `;
 
@@ -49,6 +33,7 @@ Text.propTypes = {
   fontWeight: PropTypes.string,
   letterSpacing: PropTypes.string,
   textAlign: PropTypes.string,
+  textTransform: PropTypes.string,
   uppercase: PropTypes.bool,
 };
 

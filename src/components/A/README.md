@@ -21,5 +21,11 @@ import { A } from 'drew-i-kit';
 
 - `color` (**string**, optional)
 - `fontSize` (**string**, optional)
+- `fontStyle` (**string**, optional)
+- `fontWeight` (**string**, optional)
+- `letterSpacing` (**string**, optional)
+- `lineHeight` (**string**, optional)
+- `textAlign` (**string**, optional)
 - `textDecoration` (**string**, optional)
+- `textTransform` (**string**, optional)
 - `data-hover-color` (**string**, optional)

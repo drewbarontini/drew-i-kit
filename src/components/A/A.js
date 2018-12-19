@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import { hover } from '../../lib/hover';
-import { palette, setProp } from '../../lib/props';
+import { palette, setProp, typography } from '../../lib/props';
 import { responsive } from '../../lib/responsive';
 
 const A = styled.a`
@@ -12,10 +12,6 @@ const A = styled.a`
   ${setProp({
     prop: 'color',
     themeKey: 'colors',
-  })};
-  ${setProp({
-    prop: 'fontSize',
-    themeKey: 'fonts.sizes',
   })};
   ${setProp({
     prop: 'textDecoration',
@@ -33,12 +29,17 @@ const A = styled.a`
         : palette('fg')};
   `)};
 
+  ${typography}
   ${responsive}
 `;
 
 A.propTypes = {
   color: PropTypes.string,
   fontSize: PropTypes.string,
+  fontStyle: PropTypes.string,
+  fontWeight: PropTypes.string,
+  lineHeight: PropTypes.string,
+  textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
   'data-hover-color': PropTypes.string,
 };

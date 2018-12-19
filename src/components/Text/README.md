@@ -44,8 +44,9 @@ import { Text } from 'drew-i-kit';
 
 - `color` (**string**, optional)
 - `fontSize` (**string**, optional)
-- `fontStyle` (**string**, optional)
 - `fontWeight` (**string**, optional)
 - `letterSpacing` (**string**, optional)
+- `lineHeight` (**string**, optional)
 - `textAlign` (**string**, optional)
+- `textTransform` (**string**, optional)
 - `uppercase` (**Boolean**, optional)
