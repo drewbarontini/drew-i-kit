@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.18.0 - 2018-12-18
+
+### Added
+- `typography()` prop function
+
+### Changed
+- `A`, `Heading`, `Text` components to include `typography()`
+
 ## v0.17.0 - 2018-12-18
 
 ### Added
