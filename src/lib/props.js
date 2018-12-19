@@ -57,27 +57,38 @@ export const setProp = ({
     calculatedFallback};`;
 };
 
+// spacing(props)
 export const spacing = props => {
-  const properties = ['margin', 'padding'];
-  const directions = ['bottom', 'left', 'right', 'top'];
-  const spacingProps = [];
+  const properties = [
+    { prop: 'margin', themeKey: 'spacing' },
+    { prop: 'marginBottom', themeKey: 'spacing' },
+    { prop: 'marginLeft', themeKey: 'spacing' },
+    { prop: 'marginRight', themeKey: 'spacing' },
+    { prop: 'marginTop', themeKey: 'spacing' },
+    { prop: 'padding', themeKey: 'spacing' },
+    { prop: 'paddingBottom', themeKey: 'spacing' },
+    { prop: 'paddingLeft', themeKey: 'spacing' },
+    { prop: 'paddingRight', themeKey: 'spacing' },
+    { prop: 'paddingTop', themeKey: 'spacing' },
+  ];
 
-  properties.map(property => {
-    spacingProps.push(css`
-      ${setProp({ prop: property, themeKey: 'spacing' })(props)};
-    `);
+  return setProps(properties)(props);
+};
 
-    return directions.map(direction =>
-      spacingProps.push(css`
-        ${setProp({
-          prop: `${property}${capitalize(direction)}`,
-          themeKey: 'spacing',
-        })(props)};
-      `)
-    );
-  });
+// const properties = [{ prop: 'margin', themeKey: 'spacing' }]
+// setProps(properties)
+export const setProps = properties => props => {
+  const customProps = [];
 
-  return spacingProps
+  properties.map(property =>
+    customProps.push(css`
+      ${setProp({ prop: property.prop, themeKey: property.themeKey || null })(
+        props
+      )}
+    `)
+  );
+
+  return customProps
     .join('')
     .replace(/,/g, '')
     .replace(/;;/g, ';')
@@ -87,3 +98,18 @@ export const spacing = props => {
 
 // theme('spacing.base') => '20px'
 export const theme = key => props => get(props.theme, key);
+
+// typography(props)
+export const typography = props => {
+  const properties = [
+    { prop: 'fontSize', themeKey: 'fonts.sizes' },
+    { prop: 'fontStyle' },
+    { prop: 'fontWeight', themeKey: 'fonts.weights' },
+    { prop: 'letterSpacing' },
+    { prop: 'lineHeight', themeKey: 'fonts.lineHeight' },
+    { prop: 'textAlign' },
+    { prop: 'textTransform' },
+  ];
+
+  return setProps(properties)(props);
+};

@@ -1,4 +1,4 @@
-import { palette, setProp, spacing, theme } from '../props';
+import { palette, setProp, spacing, theme, typography } from '../props';
 
 const themeObject = {
   colors: {
@@ -94,6 +94,38 @@ describe('spacing()', () => {
     expect(spacing(props)).toContain('padding-left:20px;');
     expect(spacing(props)).toContain('padding-right:20px;');
     expect(spacing(props)).toContain('padding-top:20px;');
+  });
+});
+
+describe('typography()', () => {
+  it('should return the correct typography props', () => {
+    const props = {
+      theme: {
+        fonts: {
+          lineHeight: {
+            base: '1.5',
+          },
+          sizes: {
+            base: '16px',
+          },
+          weights: {
+            bold: '700',
+          },
+        },
+      },
+      fontSize: 'base',
+      fontStyle: 'italic',
+      fontWeight: 'bold',
+      letterSpacing: '1px',
+      lineHeight: 'base',
+      textTransform: 'uppercase',
+    };
+    expect(typography(props)).toContain('font-size:16px;');
+    expect(typography(props)).toContain('font-style:italic;');
+    expect(typography(props)).toContain('font-weight:700;');
+    expect(typography(props)).toContain('letter-spacing:1px;');
+    expect(typography(props)).toContain('line-height:1.5;');
+    expect(typography(props)).toContain('text-transform:uppercase;');
   });
 });
 

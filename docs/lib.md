@@ -234,6 +234,22 @@ const Button = styled(Button)`
 // <Button padding="base" />
 ```
 
+### `typography`
+`typography()` will generate `setProp()` with the correct `themeKey` (where
+necessary) for typography-related props.
+
+```javascript
+import styled from 'styled-components';
+
+import { typography } from '.';
+
+const Button = styled(Button)`
+  ${typography};
+`;
+
+// <Button fontSize="xl" />
+```
+
 ### `breakpoint`
 `breakpoint()` pulls out the `theme.breakpoints.sizes` and creates a quick-access
 variable to generate a media query in your styled component
