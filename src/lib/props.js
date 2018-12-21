@@ -101,6 +101,7 @@ export const theme = key => props => get(props.theme, key);
 // typography(props)
 export const typography = props => {
   const properties = [
+    { prop: 'fontFamily', themeKey: 'fonts.families' },
     { prop: 'fontSize', themeKey: 'fonts.sizes' },
     { prop: 'fontStyle' },
     { prop: 'fontWeight', themeKey: 'fonts.weights' },

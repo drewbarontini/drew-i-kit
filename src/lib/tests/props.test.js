@@ -113,6 +113,7 @@ describe('typography()', () => {
           },
         },
       },
+      fontFamily: 'base',
       fontSize: 'base',
       fontStyle: 'italic',
       fontWeight: 'bold',
@@ -120,6 +121,7 @@ describe('typography()', () => {
       lineHeight: 'base',
       textTransform: 'uppercase',
     };
+    expect(typography(props)).toContain('font-family');
     expect(typography(props)).toContain('font-size:16px;');
     expect(typography(props)).toContain('font-style:italic;');
     expect(typography(props)).toContain('font-weight:700;');
