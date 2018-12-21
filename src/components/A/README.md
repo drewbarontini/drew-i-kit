@@ -19,6 +19,7 @@ import { A } from 'drew-i-kit';
 
 ### Props
 
+- `backgroundColor` (**string**, optional)
 - `color` (**string**, optional)
 - `fontFamily` (**string**, optional)
 - `fontSize` (**string**, optional)
@@ -26,7 +27,9 @@ import { A } from 'drew-i-kit';
 - `fontWeight` (**string**, optional)
 - `letterSpacing` (**string**, optional)
 - `lineHeight` (**string**, optional)
+- `padding` (**string**, optional)
 - `textAlign` (**string**, optional)
 - `textDecoration` (**string**, optional)
 - `textTransform` (**string**, optional)
+- `data-hover-background-color` (**string**, optional)
 - `data-hover-color` (**string**, optional)

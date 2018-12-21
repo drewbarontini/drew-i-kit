@@ -6,15 +6,26 @@ import { palette, setProp, typography } from '../../lib/props';
 import { responsive } from '../../lib/responsive';
 
 const A = styled.a`
-  color: ${palette('primary.base')};
-  text-decoration: none;
-
   ${setProp({
-    prop: 'color',
+    prop: 'backgroundColor',
     themeKey: 'colors',
   })};
   ${setProp({
+    prop: 'borderRadius',
+    themeKey: 'borders.radius',
+  })};
+  ${setProp({
+    prop: 'color',
+    themeKey: 'colors',
+    fallback: props => palette('primary.base')(props),
+  })};
+  ${setProp({
+    prop: 'padding',
+    themeKey: 'spacing',
+  })};
+  ${setProp({
     prop: 'textDecoration',
+    fallback: 'none',
   })};
 
   /*
@@ -23,10 +34,17 @@ const A = styled.a`
     down the prop all the way to the DOM where a warning is thrown.
   */
   ${hover(css`
-    color: ${props =>
-      props['data-hover-color']
-        ? palette(props['data-hover-color'])
-        : palette('fg')};
+    ${setProp({
+      prop: 'data-hover-background-color',
+      cssProp: 'background-color',
+      themeKey: 'colors',
+    })};
+    ${setProp({
+      prop: 'data-hover-color',
+      cssProp: 'color',
+      themeKey: 'colors',
+      fallback: props => palette('fg')(props),
+    })};
   `)};
 
   ${typography}
@@ -34,15 +52,19 @@ const A = styled.a`
 `;
 
 A.propTypes = {
+  backgroundColor: PropTypes.string,
+  borderRadius: PropTypes.string,
   color: PropTypes.string,
   fontFamily: PropTypes.string,
   fontSize: PropTypes.string,
   fontStyle: PropTypes.string,
   fontWeight: PropTypes.string,
   lineHeight: PropTypes.string,
+  padding: PropTypes.string,
   textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
   'data-hover-color': PropTypes.string,
+  'data-hover-background-color': PropTypes.string,
 };
 
 A.displayName = 'A';

@@ -25,6 +25,19 @@ storiesOf('A', module)
       Link
     </A>
   ))
+  .add('background color', () => (
+    <A
+      href="#0"
+      backgroundColor="accent.yellow.base"
+      borderRadius="s"
+      color="black"
+      padding="2px 4px"
+      data-hover-background-color="primary.base"
+      data-hover-color="white"
+    >
+      Link
+    </A>
+  ))
   .add('responsive', () => (
     <A
       href="#0"

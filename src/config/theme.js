@@ -10,6 +10,7 @@ const theme = {
     },
     radius: {
       base: '3px',
+      s: '1px',
     },
   },
   breakpoints: {
