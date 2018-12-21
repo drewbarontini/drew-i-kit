@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.22.0 - 2018-12-21
+
+### Changed
+- Improved `A`
+
 ## v0.21.0 - 2018-12-21
 
 ### Added
