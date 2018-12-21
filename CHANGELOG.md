@@ -2,6 +2,16 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.21.0 - 2018-12-21
+
+### Added
+- `theme` heading sizes
+- `theme.border.l`
+
+### Changed
+- Made `Button` more customizable
+- Moved `theme.fonts` to its own file
+
 ## v0.20.0 - 2018-12-21
 
 ### Added
