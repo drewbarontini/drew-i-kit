@@ -16,10 +16,6 @@ describe('<Button />', () => {
       'background-color',
       'transparent'
     );
-    expect(container.firstChild).toHaveStyleRule(
-      'border',
-      `2px solid ${theme.colors.fg}`
-    );
     expect(container.firstChild).toHaveStyleRule('color', theme.colors.fg);
   });
 });
