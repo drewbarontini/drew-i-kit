@@ -2,6 +2,15 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.20.0 - 2018-12-21
+
+### Added
+- `fontFamily` prop to `typography()`
+
+### Changed
+- `A`, `Heading`, `Text` component prop types
+- Global styles to set `font-family` and `line-height` on headings
+
 ## v0.19.0 - 2018-12-21
 
 ### Fixed
