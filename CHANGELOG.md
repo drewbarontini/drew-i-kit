@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.23.0 - 2018-12-21
+
+### Added
+- The ability to pass `exclusions` to `setProps()`
+
+### Changed
+- The `typography()` call in `Text` to exclude `fontSize`
+
 ## v0.22.0 - 2018-12-21
 
 ### Changed
