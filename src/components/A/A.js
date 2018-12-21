@@ -35,6 +35,7 @@ const A = styled.a`
 
 A.propTypes = {
   color: PropTypes.string,
+  fontFamily: PropTypes.string,
   fontSize: PropTypes.string,
   fontStyle: PropTypes.string,
   fontWeight: PropTypes.string,

@@ -26,6 +26,7 @@ const Heading = styled.h1`
 
 Heading.propTypes = {
   flush: PropTypes.bool,
+  fontFamily: PropTypes.string,
   fontSize: PropTypes.string,
   fontStyle: PropTypes.string,
   fontWeight: PropTypes.string,

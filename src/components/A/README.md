@@ -20,6 +20,7 @@ import { A } from 'drew-i-kit';
 ### Props
 
 - `color` (**string**, optional)
+- `fontFamily` (**string**, optional)
 - `fontSize` (**string**, optional)
 - `fontStyle` (**string**, optional)
 - `fontWeight` (**string**, optional)

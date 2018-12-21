@@ -43,6 +43,7 @@ import { Text } from 'drew-i-kit';
 ### Props
 
 - `color` (**string**, optional)
+- `fontFamily` (**string**, optional)
 - `fontSize` (**string**, optional)
 - `fontWeight` (**string**, optional)
 - `letterSpacing` (**string**, optional)

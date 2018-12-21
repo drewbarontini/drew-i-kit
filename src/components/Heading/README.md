@@ -18,6 +18,7 @@ import { Heading } from 'drew-i-kit';
 ### Props
 
 - `flush` (**string**, optional)
+- `fontFamily` (**string**, optional)
 - `fontSize` (**string**, optional)
 - `fontWeight` (**string**, optional)
 - `letterSpacing` (**string**, optional)
