@@ -6,7 +6,15 @@ import { setProp, theme, typography } from '../../lib/props';
 import { responsive } from '../../lib/responsive';
 
 const Text = styled.p`
-  font-size: ${theme('fonts.sizes.base')};
+  ${setProp({
+    prop: 'color',
+    themeKey: 'colors',
+  })};
+  ${setProp({
+    prop: 'fontSize',
+    themeKey: 'fonts.sizes',
+    fallback: props => theme('fonts.sizes.base')(props),
+  })};
 
   ${ifProp(
     'uppercase',
@@ -15,12 +23,7 @@ const Text = styled.p`
     `
   )};
 
-  ${setProp({
-    prop: 'color',
-    themeKey: 'colors',
-  })};
-
-  ${typography};
+  ${props => typography(props, ['fontSize'])};
   ${responsive};
 `;
 
