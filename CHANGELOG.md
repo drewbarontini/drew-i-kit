@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.19.0 - 2018-12-21
+
+### Fixed
+- Prop types in `Flex` and `Heading`
+
 ## v0.18.0 - 2018-12-18
 
 ### Added
