@@ -6,6 +6,7 @@ const theme = {
   borders: {
     sizes: {
       base: '1px',
+      l: '2px',
     },
     radius: {
       base: '3px',
@@ -34,8 +35,8 @@ const theme = {
     base: '0 3px 3px rgba(0, 0, 0, 0.25);',
   },
   sizing: {
-    s: '400px',
     base: '900px',
+    s: '400px',
     l: '1200px',
   },
   spacing: {
