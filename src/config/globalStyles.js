@@ -27,6 +27,8 @@ const globalStyles = css`
   h4,
   h5,
   h6 {
+    font-family: ${theme('fonts.family.heading')};
+    line-height: ${theme('fonts.lineHeight.heading')};
     margin: 0;
     margin-bottom: ${theme('spacing.s')};
   }
