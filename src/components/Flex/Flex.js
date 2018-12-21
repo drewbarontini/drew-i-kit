@@ -30,7 +30,7 @@ Flex.displayName = 'Flex';
 
 Flex.propTypes = {
   alignItems: PropTypes.string,
-  center: PropTypes.string,
+  center: PropTypes.bool,
   flex: PropTypes.string,
   flexDirection: PropTypes.string,
   flexWrap: PropTypes.string,
