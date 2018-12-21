@@ -41,7 +41,10 @@ const theme = {
       s: '12px',
       l: '16px',
       xl: '24px',
-      h1: '26px',
+      h1: '30px',
+      h2: '26px',
+      h3: '22px',
+      h4: '18px',
     },
     weights: {
       light: 200,
