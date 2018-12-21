@@ -57,7 +57,8 @@ export const setProp = ({
 };
 
 // spacing(props)
-export const spacing = props => {
+// spacing(props, ['margin'])
+export const spacing = (props, exclusions) => {
   const properties = [
     { prop: 'margin', themeKey: 'spacing' },
     { prop: 'marginBottom', themeKey: 'spacing' },
@@ -71,21 +72,23 @@ export const spacing = props => {
     { prop: 'paddingTop', themeKey: 'spacing' },
   ];
 
-  return setProps(properties)(props);
+  return setProps(properties, exclusions)(props);
 };
 
 // const properties = [{ prop: 'margin', themeKey: 'spacing' }]
 // setProps(properties)
-export const setProps = properties => props => {
+export const setProps = (properties, exclusions = []) => props => {
   const customProps = [];
 
-  properties.map(property =>
-    customProps.push(css`
-      ${setProp({ prop: property.prop, themeKey: property.themeKey || null })(
-        props
-      )}
-    `)
-  );
+  properties
+    .filter(p => exclusions.indexOf(p.prop) === -1)
+    .map(property =>
+      customProps.push(css`
+        ${setProp({ prop: property.prop, themeKey: property.themeKey || null })(
+          props
+        )}
+      `)
+    );
 
   return customProps
     .join('')
@@ -99,7 +102,8 @@ export const setProps = properties => props => {
 export const theme = key => props => get(props.theme, key);
 
 // typography(props)
-export const typography = props => {
+// typography(props, ['fontSize'])
+export const typography = (props, exclusions = []) => {
   const properties = [
     { prop: 'fontFamily', themeKey: 'fonts.families' },
     { prop: 'fontSize', themeKey: 'fonts.sizes' },
@@ -111,5 +115,5 @@ export const typography = props => {
     { prop: 'textTransform' },
   ];
 
-  return setProps(properties)(props);
+  return setProps(properties, exclusions)(props);
 };
