@@ -1,6 +1,5 @@
 import { css } from 'styled-components';
 import get from 'lodash/get';
-import capitalize from 'lodash/capitalize';
 
 import cssProps from '../config/cssProps';
 
