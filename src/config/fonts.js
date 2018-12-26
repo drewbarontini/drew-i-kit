@@ -23,10 +23,8 @@ const fonts = {
     h4: '18px',
   },
   weights: {
-    light: 200,
     normal: 400,
-    semiBold: 600,
-    bold: 800,
+    bold: 700,
   },
 };
 
