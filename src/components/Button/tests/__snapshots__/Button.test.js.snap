@@ -16,7 +16,7 @@ exports[`<Button /> should render properly 1`] = `
   color: #272727;
   display: inline-block;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 700;
   -webkit-letter-spacing: 1px;
   -moz-letter-spacing: 1px;
   -ms-letter-spacing: 1px;
