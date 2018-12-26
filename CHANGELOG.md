@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.24.0 - 2018-12-26
+
+#### Changed
+- `theme.fonts.weights`
+
 ## v0.23.0 - 2018-12-21
 
 ### Added
