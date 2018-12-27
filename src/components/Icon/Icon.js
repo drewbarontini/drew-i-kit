@@ -35,9 +35,9 @@ Icon.propTypes = {
 
 Icon.defaultProps = {
   color: null,
-  height: '20',
-  size: '20',
-  width: '20',
+  height: null,
+  size: null,
+  width: null,
 };
 
 Icon.displayName = 'Icon';
