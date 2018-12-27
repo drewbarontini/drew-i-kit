@@ -30,7 +30,6 @@ Icon.propTypes = {
   color: PropTypes.string,
   height: PropTypes.string,
   size: PropTypes.string,
-  viewBox: PropTypes.string,
   width: PropTypes.string,
 };
 
@@ -38,7 +37,6 @@ Icon.defaultProps = {
   color: null,
   height: '20',
   size: '20',
-  viewBox: '0 0 20 20',
   width: '20',
 };
 
