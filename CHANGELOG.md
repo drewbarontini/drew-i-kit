@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.26.0 - 2018-12-27
+
+### Added
+- `marginBottom` and `marginTop` to `Icon`
+
+### Changed
+- `Icon` default props
+
 ## v0.25.0 - 2018-12-27
 
 ### Added
