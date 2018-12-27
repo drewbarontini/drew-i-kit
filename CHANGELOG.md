@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## v0.25.0 - 2018-12-27
+
+### Added
+- `theme.defaults` and `theme.defaults.iconSize`
+
+### Changed
+- `Icon` defaults
+
 ## v0.24.0 - 2018-12-26
 
 #### Changed
