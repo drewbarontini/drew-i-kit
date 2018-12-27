@@ -19,8 +19,10 @@ import { Icon } from 'drew-i-kit';
 
 - `color` (**string**, optional)
 - `height` (**string**, optional)
+- `marginBottom` (**string**, optional)
 - `marginLeft` (**string**, optional)
 - `marginRight` (**string**, optional)
+- `marginTop` (**string**, optional)
 - `name` (**string**)
 - `size` (**string**, optional)
 - `width` (**string**, optional)

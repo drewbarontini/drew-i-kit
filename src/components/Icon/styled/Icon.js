@@ -16,11 +16,19 @@ const Icon = styled.svg`
     fallback: 'currentColor',
   })};
   ${setProp({
+    prop: 'marginBottom',
+    themeKey: 'spacing',
+  })};
+  ${setProp({
     prop: 'marginLeft',
     themeKey: 'spacing',
   })};
   ${setProp({
     prop: 'marginRight',
+    themeKey: 'spacing',
+  })};
+  ${setProp({
+    prop: 'marginTop',
     themeKey: 'spacing',
   })};
 
@@ -29,8 +37,10 @@ const Icon = styled.svg`
 
 Icon.propTypes = {
   color: PropTypes.string,
+  marginBottom: PropTypes.string,
   marginLeft: PropTypes.string,
   marginRight: PropTypes.string,
+  marginTop: PropTypes.string,
 };
 
 Icon.displayName = 'StyledIcon';
