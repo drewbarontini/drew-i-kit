@@ -4,24 +4,16 @@ import { withTheme } from 'styled-components';
 
 import StyledIcon from './styled/Icon';
 
-const Icon = ({
-  name,
-  color,
-  height = '20',
-  size = '20',
-  width = '20',
-  theme,
-  ...props
-}) => {
-  const newWidth = size || width;
-  const newHeight = size || height;
+const Icon = ({ color, height, name, size, theme, width, ...props }) => {
+  const newWidth = size || width || theme.defaults.iconSize;
+  const newHeight = size || height || theme.defaults.iconSize;
 
   return (
     <StyledIcon
       color={color}
       width={newWidth}
       height={newHeight}
-      viewBox="0 0 20 20"
+      viewBox={`0 0 ${theme.defaults.iconSize} ${theme.defaults.iconSize}`}
       {...props}
     >
       {Array.isArray(theme.icons[name]) ? (
@@ -38,6 +30,7 @@ Icon.propTypes = {
   color: PropTypes.string,
   height: PropTypes.string,
   size: PropTypes.string,
+  viewBox: PropTypes.string,
   width: PropTypes.string,
 };
 
@@ -45,6 +38,7 @@ Icon.defaultProps = {
   color: null,
   height: '20',
   size: '20',
+  viewBox: '0 0 20 20',
   width: '20',
 };
 

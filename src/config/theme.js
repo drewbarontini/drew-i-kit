@@ -26,6 +26,9 @@ const theme = {
   colors: {
     ...colors,
   },
+  defaults: {
+    iconSize: '20',
+  },
   fonts: {
     ...fonts,
   },
